@@ -4,86 +4,360 @@
       .steps-w
         .step-triggers
           a.step-trigger.active href="#stepContent1"
-            i.os-icon.os-icon-arrow-down6
+            i.os-icon.os-icon-home
           a.step-trigger href="#stepContent2"
-            | Second Step
+            i.os-icon.os-icon-home
           a.step-trigger href="#stepContent3"
-            | Third Step
-          a.step-trigger.active href="#stepContent4"
-            | Fourth Step
+            i.os-icon.os-icon-home
+          a.step-trigger href="#stepContent4"
+            i.os-icon.os-icon-home
           a.step-trigger href="#stepContent5"
-            | Fifth Step
+            i.os-icon.os-icon-home
           a.step-trigger href="#stepContent6"
-            | Sixth Step
+            i.os-icon.os-icon-home
+        / Step 1
         .step-contents
           #stepContent1.step-content.active
-            .row
-              .col-sm-6
-                .form-group
-                  label for=""  First Name
-                  input.form-control placeholder="First Name" type="text" /
-              .col-sm-6
-                .form-group
-                  label for="" Last Name
-                  input.form-control placeholder="Last Name" type="text" /
-            .row
-              .col-sm-6
-                .form-group
-                  label for=""  Date of Birth
-                  input.form-control placeholder="First Name" type="text" /
-              .col-sm-6
-                .form-group
-                  label for="" Country of Origin
-                  input.form-control placeholder="Last Name" type="text" /
+            fieldset.form-group
+              legend 
+                span Property Details
             .form-group
-              label for=""  States with Offices
-              select.form-control.select2 multiple="true"
-                option selected="true" New York
-                option selected="true" California
-                option Boston
-                option Texas
-                option Colorado
-            .form-group
-              label for=""  Regular select
+              label for=""  Type of Commercial property
               select.form-control
-                option Select State
-                option New York
-                option California
-                option Boston
-                option Texas
-                option Colorado
+                option Select type
+                option Office
+                option Warehouse
+                option Retail
+                option Garage
+                option Hospitality
+                option Industrial
+                option Storage
+                option Other
             .form-group
-              label  Example textarea
-              textarea.form-control rows="3" 
-            .form-buttons-w.text-right
-              a.btn.btn-primary.step-trigger-btn href="#stepContent2"  Continue
-
-          #stepContent2.step-content
+              label for=""  Type of Lease
+              select.form-control
+                option Type of Lease
+                option Gross (Landlord pays for the property)
+                option Modified Gross (Landlord and tenant share property expenses)
+                option Triple Net (Tenant pays for propert expenses)
             .form-group
-              label for=""  Email address
+              label for="" Will a floorplan be attached?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionsRadios" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionsRadios" type="radio" value="option2" /
+                  | No
+            .form-group
+              label for="" What is the square footage of the property? 
+              input.form-control placeholder=("e.g., 10,000 sq ft") type="text" /
+            .form-group
+              label for="" Property Address 
               input.form-control placeholder=("Enter email") type="email" /
             .row
               .col-sm-6
                 .form-group
-                  label for=""  Password
-                  input.form-control placeholder="Password" type="password" /
+                  label for=""  City
+                  input.form-control placeholder="City" type="text" /
               .col-sm-6
                 .form-group
-                  label for="" Confirm Password
-                  input.form-control placeholder="Password" type="password" /
+                  label for=""  Select State
+                  select.form-control
+                    option Select State
+                    option New York
+                    option California
+                    option Boston
+                    option Texas
+                    option Colorado
+                    option Washington
             .form-group
-              label for=""  Regular select
+              label for="" What is Tax Map, Lot, or Block Numbers of the property? 
+              input.form-control placeholder=("Tax Map ID") type="text" /
+            .form-group
+              input.form-control placeholder=("Lot Number") type="text" /
+            .form-group
+              input.form-control placeholder=("Block Number") type="text" /
+            .form-group
+              label for="" What is the deed book and page numbers to the property? 
+              input.form-control placeholder=("Book") type="text" /
+            .form-group
+              input.form-control placeholder=("Page") type="text" /
+            .form-group
+              label  List any additional details that should be included in the lease.
+              textarea.form-control rows="3"
+            .form-buttons-w.text-right
+              a.btn.btn-primary.step-trigger-btn href="#stepContent2"  Continue
+          
+          / Step 2
+          #stepContent2.step-content
+            fieldset.form-group
+            legend 
+              span Landlord Details
+            .form-group
+              label for="" Is the Landlord a business or individual?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Business Entity
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Individual
+            .form-group
+              label for=""  How many individuals?
               select.form-control
-                option Select State
-                option New York
-                option California
-                option Boston
-                option Texas
-                option Colorado
+                option Select Number
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+            .form-group
+              label for=""  Landlord Name
+              input.form-control placeholder=("Enter name") type="text" /
+            .form-group
+              label for=""  Landlord Address
+              input.form-control placeholder=("Enter Address") type="text" /
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  City
+                  input.form-control placeholder="City" type="text" /
+              .col-sm-6
+                .form-group
+                  label for="" State
+                  select.form-control
+                    option Select State
+                    option Washington
+                    option New York
+                    option Missisippi
+                    option Colorado
+                    option Kansas
+           
+            fieldset.form-group
+            legend 
+              span Tenant Details
+            .form-group
+              label for="" Is the Tenant a business or individual?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Business Entity
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Individual
+            .form-group
+              label for=""  How many individuals?
+              select.form-control
+                option Select Number
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+            .form-group
+              label for=""  Tenant Name
+              input.form-control placeholder=("Enter name") type="text" /
+            .form-group
+              label for=""  Tenant Address
+              input.form-control placeholder=("Enter Address") type="text" /
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  City
+                  input.form-control placeholder="City" type="text" /
+              .col-sm-6
+                .form-group
+                  label for="" State
+                  select.form-control
+                    option Select State
+                    option Washington
+                    option New York
+                    option Missisippi
+                    option Colorado
+                    option Kansas
+            .form-group
+              label  List any business restrictions on the property.
+              textarea.form-control rows="3"
+            .form-group
+              label  If the tenant will be protected from direct competition on the property (exclusive use) please specify below.
+              textarea.form-control rows="3"
             .form-buttons-w.text-right
               a.btn.btn-primary.step-trigger-btn href="#stepContent3"  Continue
-
+          / Step 3
           #stepContent3.step-content
+            fieldset.form-group
+              legend 
+                span Terms of the lease
+            .form-group
+              label for=""  Rent will be paid:
+              select.form-control
+                option Select cadence
+                option Weekly
+                option Monthly
+                option Quarterly
+                option Every 6 months
+                option Yearly
+                option Other
+            .form-group
+              label for=""  Rent will be due on the:
+              select.form-control
+                option Select day
+                option 1st
+                option 15th
+                option last day of the month
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  Lease Start Date
+                  input.form-control placeholder="Select Date" type="text" /
+              .col-sm-6
+                .form-group
+                  label for="" Lease End Date
+                  input.form-control placeholder="Select Date" type="text" /
+            .form-group
+              label for="" Will the rent amount be the same the entire lease period?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label for=""  Rent Amount
+              input.form-control placeholder=("e.g. $7,000 ") type="text" /
+            .form-group
+              label for="" Do you want to include built in rent increases? 
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label  Describe the rent increases: (e.g. First Year - $1000.00, Second Year - $1250.00, etc.)
+              textarea.form-control rows="3"
+            fieldset.form-group
+              legend 
+                span Rent Structure
+            .form-group
+              label for="" Do you want to specify late payment charges? 
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label for=""  What type of late payment charge?
+              select.form-control
+                option Fixed charge per late payment
+                option Fixed charge per day date
+                option Percentage(%) of rent
+                option Other
+            .form-group
+              input.form-control placeholder=("Amount of Late charge ") type="text" /
+            .row
+              .col-sm-8
+                .form-group
+                  label for=""  The late charge fee shall be applied after the
+                  input.form-control placeholder=("Day") type="text" the rent is due
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  Fee for returned checks
+                  input.form-control placeholder="Amount" type="number" /
+              .col-sm-6
+                .form-group
+                  label for="" Security deposit Amount
+                  input.form-control placeholder="Amount" type="number" /
+            .form-group
+                  label for="" Within how many days will the security deposit be returned to the tenant?
+                  input.form-control placeholder="Amount" type="number" days
+            .form-group
+              label for="" Will there be a percentage(%) rent?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label for="" What will the percentage (%) of rent be based on?
+              select.form-control
+                option Select option
+                option All Gross Sales
+                option Gross Sales ABOVE a specified amount
+                option Gross Sales BELOW a specified amount
+                option Other
+            .row
+              .col-sm-8
+                .form-group
+                  label for=""  Percentage of Gross Sales?
+                  input.form-control placeholder=("Percentage Amount") type="text"
+            .form-group
+              label for="" Will the tenant be able to move in before the lease start date (early possession)?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  Possession Occupancy date?
+                  input.form-control placeholder="Date" type="number" /
+              .col-sm-6
+                .form-group
+                  label for="" Amount due for the prorated period
+                  input.form-control placeholder="Amount" type="number" / 
+            .form-group
+              label for="" Will the tenant have the option to renew the lease?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+                  label for="" How many renewal periods will there be?
+                  input.form-control placeholder="number of periods" type="number" /  
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  1st renewal start date
+                  input.form-control placeholder="Date" type="number" /
+              .col-sm-6
+                .form-group
+                  label for="" 2nd renewal end date
+                  input.form-control placeholder="Date" type="number" /      
+            .form-group
+              label for="" Rent renewal period
+              select.form-control
+                option Select option
+                option Adjust to CPI
+                option Fixed Amount
+                option To be Negotiated
+            .form-buttons-w.text-right
+              a.btn.btn-primary.step-trigger-btn href="#stepContent4"  Continue
+          / Step 4
+          #stepContent4.step-content
             .form-group
               label for=""  Regular select
               select.form-control
@@ -103,8 +377,29 @@
                   label for="" Country of Origin
                   input.form-control placeholder="Last Name" type="text" /
             .form-buttons-w.text-right
-            
-          #stepContent4.step-content
+            / Step 5
+          #stepContent5.step-content
+            .form-group
+              label for=""  Regular select
+              select.form-control
+                option Select State
+                option New York
+                option California
+                option Boston
+                option Texas
+                option Colorado
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  Date of Birth
+                  input.form-control placeholder="First Name" type="text" /
+              .col-sm-6
+                .form-group
+                  label for="" Country of Origin
+                  input.form-control placeholder="Last Name" type="text" /
+            .form-buttons-w.text-right
+            / Step 3
+          #stepContent6.step-content
             .form-group
               label for=""  Regular select
               select.form-control

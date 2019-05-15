@@ -169,7 +169,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  Martin Gomez
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -549,7 +549,7 @@
             <a class="logo" href="index.html">
               <div class="logo-element"></div>
               <div class="logo-label">
-                Clean Admin
+                Terra chain
               </div>
             </a>
           </div>
@@ -560,7 +560,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  Martin Gomez
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -576,7 +576,7 @@
                   </div>
                   <div class="logged-user-info-w">
                     <div class="logged-user-name">
-                      Maria Gomez
+                      Martin Gomez
                     </div>
                     <div class="logged-user-role">
                       Administrator
@@ -1399,7 +1399,7 @@
                       </div>
                       <div class="logged-user-info-w">
                         <div class="logged-user-name">
-                          Maria Gomez
+                          Martin Gomez
                         </div>
                         <div class="logged-user-role">
                           Administrator
@@ -1447,10 +1447,10 @@
               <a href="index.html">Home</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="index.html">Products</a>
+              <a href="index.html">MITiMCO</a>
             </li>
             <li class="breadcrumb-item">
-              <span>Laptop with retina screen</span>
+              <span>Create new lease</span>
             </li>
           </ul>
           <!--------------------
@@ -1465,125 +1465,517 @@
     <form>
       <div class="steps-w">
         <div class="step-triggers">
-          <a class="step-trigger active" href="#stepContent1"><i class="os-icon os-icon-arrow-down6"></i></a><a class="step-trigger" href="#stepContent2">Second Step</a><a class="step-trigger" href="#stepContent3">Third Step</a><a class="step-trigger active" href="#stepContent4">Fourth Step</a><a class="step-trigger" href="#stepContent5">Fifth Step</a><a class="step-trigger" href="#stepContent6">Sixth Step</a>
+          <a class="step-trigger active" href="#stepContent1"><i class="os-icon os-icon-home"></i></a><a class="step-trigger" href="#stepContent2"><i class="os-icon os-icon-home"></i></a><a class="step-trigger" href="#stepContent3"><i class="os-icon os-icon-home"></i></a><a class="step-trigger" href="#stepContent4"><i class="os-icon os-icon-home"></i></a><a class="step-trigger" href="#stepContent5"><i class="os-icon os-icon-home"></i></a><a class="step-trigger" href="#stepContent6"><i class="os-icon os-icon-home"></i></a>
         </div>
         <div class="step-contents">
           <div class="step-content active" id="stepContent1">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for=""> First Name</label><input class="form-control" placeholder="First Name" type="text" />
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="">Last Name</label><input class="form-control" placeholder="Last Name" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for=""> Date of Birth</label><input class="form-control" placeholder="First Name" type="text" />
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="">Country of Origin</label><input class="form-control" placeholder="Last Name" type="text" />
-                </div>
-              </div>
-            </div>
+            <fieldset class="form-group">
+              <legend><span>Property Details</span></legend>
+            </fieldset>
             <div class="form-group">
-              <label for=""> States with Offices</label><select class="form-control select2" multiple="true">
-                <option selected="true">
-                  New York
-                </option>
-                <option selected="true">
-                  California
+              <label for=""> Type of Commercial property</label><select class="form-control">
+                <option>
+                  Select type
                 </option>
                 <option>
-                  Boston
+                  Office
                 </option>
                 <option>
-                  Texas
+                  Warehouse
                 </option>
                 <option>
-                  Colorado
+                  Retail
+                </option>
+                <option>
+                  Garage
+                </option>
+                <option>
+                  Hospitality
+                </option>
+                <option>
+                  Industrial
+                </option>
+                <option>
+                  Storage
+                </option>
+                <option>
+                  Other
                 </option>
               </select>
             </div>
             <div class="form-group">
-              <label for=""> Regular select</label><select class="form-control">
+              <label for=""> Type of Lease</label><select class="form-control">
                 <option>
-                  Select State
+                  Type of Lease
                 </option>
                 <option>
-                  New York
+                  Gross (Landlord pays for the property)
                 </option>
                 <option>
-                  California
+                  Modified Gross (Landlord and tenant share property expenses)
                 </option>
                 <option>
-                  Boston
-                </option>
-                <option>
-                  Texas
-                </option>
-                <option>
-                  Colorado
+                  Triple Net (Tenant pays for propert expenses)
                 </option>
               </select>
             </div>
             <div class="form-group">
-              <label> Example textarea</label><textarea class="form-control" rows="3"></textarea>
+              <label for="">Will a floorplan be attached?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionsRadios" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionsRadios" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">What is the square footage of the property? </label><input class="form-control" placeholder="e.g., 10,000 sq ft" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Property Address </label><input class="form-control" placeholder="Enter email" type="email" />
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> City</label><input class="form-control" placeholder="City" type="text" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Select State</label><select class="form-control">
+                    <option>
+                      Select State
+                    </option>
+                    <option>
+                      New York
+                    </option>
+                    <option>
+                      California
+                    </option>
+                    <option>
+                      Boston
+                    </option>
+                    <option>
+                      Texas
+                    </option>
+                    <option>
+                      Colorado
+                    </option>
+                    <option>
+                      Washington
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">What is Tax Map, Lot, or Block Numbers of the property? </label><input class="form-control" placeholder="Tax Map ID" type="text" />
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Lot Number" type="text" />
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Block Number" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">What is the deed book and page numbers to the property? </label><input class="form-control" placeholder="Book" type="text" />
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Page" type="text" />
+            </div>
+            <div class="form-group">
+              <label> List any additional details that should be included in the lease.</label><textarea class="form-control" rows="3"></textarea>
             </div>
             <div class="form-buttons-w text-right">
               <a class="btn btn-primary step-trigger-btn" href="#stepContent2"> Continue</a>
             </div>
           </div>
           <div class="step-content" id="stepContent2">
+            <fieldset class="form-group"></fieldset>
+            <legend><span>Landlord Details</span></legend>
             <div class="form-group">
-              <label for=""> Email address</label><input class="form-control" placeholder="Enter email" type="email" />
+              <label for="">Is the Landlord a business or individual?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Business Entity</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Individual</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""> How many individuals?</label><select class="form-control">
+                <option>
+                  Select Number
+                </option>
+                <option>
+                  1
+                </option>
+                <option>
+                  2
+                </option>
+                <option>
+                  3
+                </option>
+                <option>
+                  4
+                </option>
+                <option>
+                  5
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for=""> Landlord Name</label><input class="form-control" placeholder="Enter name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for=""> Landlord Address</label><input class="form-control" placeholder="Enter Address" type="text" />
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for=""> Password</label><input class="form-control" placeholder="Password" type="password" />
+                  <label for=""> City</label><input class="form-control" placeholder="City" type="text" />
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="">Confirm Password</label><input class="form-control" placeholder="Password" type="password" />
+                  <label for="">State</label><select class="form-control">
+                    <option>
+                      Select State
+                    </option>
+                    <option>
+                      Washington
+                    </option>
+                    <option>
+                      New York
+                    </option>
+                    <option>
+                      Missisippi
+                    </option>
+                    <option>
+                      Colorado
+                    </option>
+                    <option>
+                      Kansas
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <fieldset class="form-group"></fieldset>
+            <legend><span>Tenant Details</span></legend>
+            <div class="form-group">
+              <label for="">Is the Tenant a business or individual?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Business Entity</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Individual</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""> How many individuals?</label><select class="form-control">
+                <option>
+                  Select Number
+                </option>
+                <option>
+                  1
+                </option>
+                <option>
+                  2
+                </option>
+                <option>
+                  3
+                </option>
+                <option>
+                  4
+                </option>
+                <option>
+                  5
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for=""> Tenant Name</label><input class="form-control" placeholder="Enter name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for=""> Tenant Address</label><input class="form-control" placeholder="Enter Address" type="text" />
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> City</label><input class="form-control" placeholder="City" type="text" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">State</label><select class="form-control">
+                    <option>
+                      Select State
+                    </option>
+                    <option>
+                      Washington
+                    </option>
+                    <option>
+                      New York
+                    </option>
+                    <option>
+                      Missisippi
+                    </option>
+                    <option>
+                      Colorado
+                    </option>
+                    <option>
+                      Kansas
+                    </option>
+                  </select>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <label for=""> Regular select</label><select class="form-control">
-                <option>
-                  Select State
-                </option>
-                <option>
-                  New York
-                </option>
-                <option>
-                  California
-                </option>
-                <option>
-                  Boston
-                </option>
-                <option>
-                  Texas
-                </option>
-                <option>
-                  Colorado
-                </option>
-              </select>
+              <label> List any business restrictions on the property.</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label> If the tenant will be protected from direct competition on the property (exclusive use) please specify below.</label><textarea class="form-control" rows="3"></textarea>
             </div>
             <div class="form-buttons-w text-right">
               <a class="btn btn-primary step-trigger-btn" href="#stepContent3"> Continue</a>
             </div>
           </div>
           <div class="step-content" id="stepContent3">
+            <fieldset class="form-group">
+              <legend><span>Terms of the lease</span></legend>
+            </fieldset>
+            <div class="form-group">
+              <label for=""> Rent will be paid:</label><select class="form-control">
+                <option>
+                  Select cadence
+                </option>
+                <option>
+                  Weekly
+                </option>
+                <option>
+                  Monthly
+                </option>
+                <option>
+                  Quarterly
+                </option>
+                <option>
+                  Every 6 months
+                </option>
+                <option>
+                  Yearly
+                </option>
+                <option>
+                  Other
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for=""> Rent will be due on the:</label><select class="form-control">
+                <option>
+                  Select day
+                </option>
+                <option>
+                  1st
+                </option>
+                <option>
+                  15th
+                </option>
+                <option>
+                  last day of the month
+                </option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Lease Start Date</label><input class="form-control" placeholder="Select Date" type="text" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">Lease End Date</label><input class="form-control" placeholder="Select Date" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will the rent amount be the same the entire lease period?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""> Rent Amount</label><input class="form-control" placeholder="e.g. $7,000 " type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Do you want to include built in rent increases? </label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> Describe the rent increases: (e.g. First Year - $1000.00, Second Year - $1250.00, etc.)</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <fieldset class="form-group">
+              <legend><span>Rent Structure</span></legend>
+            </fieldset>
+            <div class="form-group">
+              <label for="">Do you want to specify late payment charges? </label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for=""> What type of late payment charge?</label><select class="form-control">
+                <option>
+                  Fixed charge per late payment
+                </option>
+                <option>
+                  Fixed charge per day date
+                </option>
+                <option>
+                  Percentage(%) of rent
+                </option>
+                <option>
+                  Other
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Amount of Late charge " type="text" />
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <label for=""> The late charge fee shall be applied after the</label><input class="form-control" placeholder="Day" type="text">the rent is due</input>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Fee for returned checks</label><input class="form-control" placeholder="Amount" type="number" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">Security deposit Amount</label><input class="form-control" placeholder="Amount" type="number" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Within how many days will the security deposit be returned to the tenant?</label><input class="form-control" placeholder="Amount" type="number">days</input>
+            </div>
+            <div class="form-group">
+              <label for="">Will there be a percentage(%) rent?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">What will the percentage (%) of rent be based on?</label><select class="form-control">
+                <option>
+                  Select option
+                </option>
+                <option>
+                  All Gross Sales
+                </option>
+                <option>
+                  Gross Sales ABOVE a specified amount
+                </option>
+                <option>
+                  Gross Sales BELOW a specified amount
+                </option>
+                <option>
+                  Other
+                </option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <label for=""> Percentage of Gross Sales?</label><input class="form-control" placeholder="Percentage Amount" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant be able to move in before the lease start date (early possession)?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Possession Occupancy date?</label><input class="form-control" placeholder="Date" type="number" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">Amount due for the prorated period</label><input class="form-control" placeholder="Amount" type="number" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant have the option to renew the lease?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">How many renewal periods will there be?</label><input class="form-control" placeholder="number of periods" type="number" />
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> 1st renewal start date</label><input class="form-control" placeholder="Date" type="number" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">2nd renewal end date</label><input class="form-control" placeholder="Date" type="number" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Rent renewal period</label><select class="form-control">
+                <option>
+                  Select option
+                </option>
+                <option>
+                  Adjust to CPI
+                </option>
+                <option>
+                  Fixed Amount
+                </option>
+                <option>
+                  To be Negotiated
+                </option>
+              </select>
+            </div>
+            <div class="form-buttons-w text-right">
+              <a class="btn btn-primary step-trigger-btn" href="#stepContent4"> Continue</a>
+            </div>
+          </div>
+          <div class="step-content" id="stepContent4">
             <div class="form-group">
               <label for=""> Regular select</label><select class="form-control">
                 <option>
@@ -1620,7 +2012,44 @@
             </div>
             <div class="form-buttons-w text-right"></div>
           </div>
-          <div class="step-content" id="stepContent4">
+          <div class="step-content" id="stepContent5">
+            <div class="form-group">
+              <label for=""> Regular select</label><select class="form-control">
+                <option>
+                  Select State
+                </option>
+                <option>
+                  New York
+                </option>
+                <option>
+                  California
+                </option>
+                <option>
+                  Boston
+                </option>
+                <option>
+                  Texas
+                </option>
+                <option>
+                  Colorado
+                </option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Date of Birth</label><input class="form-control" placeholder="First Name" type="text" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">Country of Origin</label><input class="form-control" placeholder="Last Name" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="form-buttons-w text-right"></div>
+          </div>
+          <div class="step-content" id="stepContent6">
             <div class="form-group">
               <label for=""> Regular select</label><select class="form-control">
                 <option>
