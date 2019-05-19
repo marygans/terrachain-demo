@@ -200,6 +200,9 @@
                     <a href="apps_projects.html">Dashboard 4</a>
                   </li>
                   <li>
+                    <a href="apps_terrachain.html">TerraChain</a>
+                  </li>
+                  <li>
                     <a href="apps_bank.html">Dashboard 5</a>
                   </li>
                   <li>
@@ -827,6 +830,10 @@
                       <a href="apps_projects.html">Dashboard 4</a>
                     </li>
                     <li>
+                      <a href="apps_terrachain.html">TerraChain</a>
+                    </li>
+                    </ul><ul class="sub-menu">
+                    <li>
                       <a href="apps_bank.html">Dashboard 5</a>
                     </li>
                     <li>
@@ -1450,7 +1457,7 @@
               <a href="index.html">MITiMCO</a>
             </li>
             <li class="breadcrumb-item">
-              <span>Create new lease</span>
+              <span>Portfolio</span>
             </li>
           </ul>
           <!--------------------
@@ -1661,6 +1668,9 @@
                 </div>
               </div>
             </div>
+            <div class="form-buttons text-center">
+              <a class="btn btn-primary" href="#"><i class="os-icon os-icon-plus"></i><span>Add additional landlord</span></a>
+            </div>
             <fieldset class="form-group"></fieldset>
             <legend><span>Tenant Details</span></legend>
             <div class="form-group">
@@ -1731,6 +1741,9 @@
                 </div>
               </div>
             </div>
+            <div class="form-buttons text-center">
+              <a class="btn btn-primary" href="#"><i class="os-icon os-icon-plus"></i><span>Add additional tenant</span></a>
+            </div>
             <div class="form-group">
               <label> List any business restrictions on the property.</label><textarea class="form-control" rows="3"></textarea>
             </div>
@@ -1789,7 +1802,10 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for=""> Lease Start Date</label><input class="form-control" placeholder="Select Date" type="text" />
+                  <label for=""> Lease Start Date</label>
+                  <div class="date-input">
+                    <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/2019" />
+                  </div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -1822,9 +1838,8 @@
             <div class="form-group">
               <label> Describe the rent increases: (e.g. First Year - $1000.00, Second Year - $1250.00, etc.)</label><textarea class="form-control" rows="3"></textarea>
             </div>
-            <fieldset class="form-group">
-              <legend><span>Rent Structure</span></legend>
-            </fieldset>
+            <fieldset class="form-group"></fieldset>
+            <legend><span>Charges and Fees</span></legend>
             <div class="form-group">
               <label for="">Do you want to specify late payment charges? </label>
               <div class="form-check">
@@ -1976,116 +1991,847 @@
             </div>
           </div>
           <div class="step-content" id="stepContent4">
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Utilities</span></legend>
+            </div>
             <div class="form-group">
-              <label for=""> Regular select</label><select class="form-control">
-                <option>
-                  Select State
-                </option>
-                <option>
-                  New York
-                </option>
-                <option>
-                  California
-                </option>
-                <option>
-                  Boston
-                </option>
-                <option>
-                  Texas
-                </option>
-                <option>
-                  Colorado
-                </option>
-              </select>
+              <label for=""> Who is responsible for paying the following utilities?</label>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for=""> Date of Birth</label><input class="form-control" placeholder="First Name" type="text" />
-                </div>
+            <!--------------------
+            END - Controls Above Table
+            ------------------          --><!--------------------
+            START - Table with actions
+            ------------------  -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-lg table-v2 table-striped">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>
+                      Tenant pays direct
+                    </th>
+                    <th>
+                      Tenant pays landlord
+                    </th>
+                    <th>
+                      Landlord pays
+                    </th>
+                    <th>
+                      None
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Electricity
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Natural gas
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Water
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sewage
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Telephone
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Internet
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Cable
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                    <td class="text-center">
+                      <input class="form-control" type="radio" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--------------------
+            END - Table with actions
+            ------------------            --><!--------------------
+            START - Controls below table
+            ------------------  -->
+            <div class="controls-below-table">
+              <div class="table-records-info">
+                Showing records 1 - 5
               </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="">Country of Origin</label><input class="form-control" placeholder="Last Name" type="text" />
-                </div>
+              <div class="table-records-pages">
+                <ul>
+                  <li>
+                    <a href="#">Previous</a>
+                  </li>
+                  <li>
+                    <a class="current" href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">Next</a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="form-buttons-w text-right"></div>
+            <!--------------------
+            END - Controls below table
+            -------------------->
+            <fieldset class="form-group">
+              <legend><span>Parking and Storage</span></legend>
+            </fieldset>
+            <div class="form-group">
+              <label for=""> Will there be parking? included?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will the spaces be shared or dedicated to the tenant?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />shared between tenants of the property only</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />dedicated to the tenant and customers only</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Is the parking located on-site of off-site?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />on the property</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />off-site</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will there be a fee charged to the tenant for a parking?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <legend><span>Furnishings</span></legend>
+            </fieldset>
+            <div class="form-group">
+              <label for="">Is furnishings included?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <fieldset class="form-group">
+              <legend><span>Maintenance</span></legend>
+              <div class="form-group">
+                <label for="">Who is responsible for the maintenance on the property?</label><!--------------------
+                END - Controls Above Table
+                ------------------          --><!--------------------
+                START - Table with actions
+                ------------------  -->
+                <div class="table-responsive">
+                  <table class="table table-bordered table-lg table-v2 table-striped">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>
+                          Tenant
+                        </th>
+                        <th>
+                          Landlord
+                        </th>
+                        <th>
+                          None
+                        </th>
+                        <th>
+                          Percentage
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Parking area
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text">% /</input>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Snow removal
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Landscaping
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Trash removal
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Janitorial Services
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Security Systems
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Window washing
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Management salary/fees
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Stormwater
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Admin fees
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Stairwell maintenance
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Common area lighting
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Loading Docks
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Delivery areas
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Other
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" type="radio" />
+                        </td>
+                        <td class="text-center">
+                          <input class="form-control" placeholder="e.g., 10%" type="text" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--------------------
+                END - Table with actions
+                ------------------            --><!--------------------
+                START - Controls below table
+                ------------------  --><!--------------------
+                END - Controls below table
+                -------------------->
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend><span>Real Estate Taxes and Insurance</span></legend>
+              <div class="form-group">
+                <label for="">Who is responsible for the real estate taxes on the property?</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Landlord</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Tenant</label>
+              </div>
+            </fieldset>
+            <div class="form-group">
+              <label for="">Who is responsible for the Property Damage and Liability Insurance on the property?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Landlord</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Tenant</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> What will be the Minimum liability amount provided by the tenant?</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-buttons-w text-right">
+              <a class="btn btn-primary step-trigger-btn" href="#stepContent5"> Continue</a>
+            </div>
           </div>
           <div class="step-content" id="stepContent5">
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Landlord and Tenant Improvements</span></legend>
+            </div>
             <div class="form-group">
-              <label for=""> Regular select</label><select class="form-control">
-                <option>
-                  Select State
-                </option>
-                <option>
-                  New York
-                </option>
-                <option>
-                  California
-                </option>
-                <option>
-                  Boston
-                </option>
-                <option>
-                  Texas
-                </option>
-                <option>
-                  Colorado
-                </option>
-              </select>
+              <label for="">Will the landlord be responsible for any Leasehold Improvements?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> The landlord will be responsible for the following improvements:</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant be allowed to make Improvements to the property?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes, with the landlord’s consent</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Yes, with the landlord’s written consent</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option3" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> Tenant Improvements described in detail below:</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Sale of Property</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">If the property is sold, will the landlord have the right to terminate the lease agreement? </label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Enter the number of days notice the landlord must give the tenant</label><input class="form-control" placeholder="e.g., 180 days" type="number">days</input>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Tenant Clauses</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant be allowed to sublet the property?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes, with no restrictions</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Yes, with the landlord’s written consent</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option3" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will pets be allowed on the premises?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes, with no restrictions</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Yes, with restrictions</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No; unless used for Americans with  Disability Act</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> What are the restrictions?</label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant have a Right of First Refusal of the property?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> How many days will the tenant have to accept or reject the offer to purchase? </label><textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Will the tenant have an option to purchase the property during the lease?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for=""> Date of Birth</label><input class="form-control" placeholder="First Name" type="text" />
+                  <label for=""> Purchase Price</label><input class="form-control" placeholder="e.g., $100,000" type="number" />
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="">Country of Origin</label><input class="form-control" placeholder="Last Name" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="form-buttons-w text-right"></div>
-          </div>
-          <div class="step-content" id="stepContent6">
-            <div class="form-group">
-              <label for=""> Regular select</label><select class="form-control">
-                <option>
-                  Select State
-                </option>
-                <option>
-                  New York
-                </option>
-                <option>
-                  California
-                </option>
-                <option>
-                  Boston
-                </option>
-                <option>
-                  Texas
-                </option>
-                <option>
-                  Colorado
-                </option>
-              </select>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for=""> Date of Birth</label><input class="form-control" placeholder="First Name" type="text" />
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="">Country of Origin</label><input class="form-control" placeholder="Last Name" type="text" />
+                  <label for="">Deposit</label><input class="form-control" placeholder="e.g., $100,000" type="number" />
                 </div>
               </div>
             </div>
             <div class="form-buttons-w text-right">
-              <button class="btn btn-primary">Submit Form</button>
+              <a class="btn btn-primary step-trigger-btn" href="#stepContent6"> Continue</a>
+            </div>
+          </div>
+          <div class="step-content" id="stepContent6">
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Americans with Disabilities Act</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">Who will be responsible for the property being in compliance with the Americans with Disabilities Act?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Landlord</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Tenant</label>
+              </div>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Disputes</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">What happens if the Landlord and Tenant get into a dispute?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Mediation then Arbitration</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Mediation then Litigation</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Litigation</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />Other</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Will anyone, besides the Tenant, be  Personally Guarenteeing this Lease?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Additional Clauses</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">You can add additional clauses if there is some information, details, terms or restrictions not present in the lease but you wish to include. In most leases, this is not necessary.</label>
+            </div>
+            <div class="form-buttons text-center">
+              <button class="mr-2 mb-2 btn btn-primary btn-lg" type="button"></button><i class="os-icon os-icon-plus"></i><span>Add additional clauses</span>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Notary Public</span></legend>
+            </div>
+            <div class="form-group">
+              <label for="">Will this Lease be signed in the presence of a Notary Public?</label>
+              <div class="form-check">
+                <label class="form-check-label"><input checked="" class="form-check-input" name="optionBusiness" type="radio" value="option1" />Yes (recommended)</label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label"><input class="form-check-input" name="optionBusiness" type="radio" value="option2" />No</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Lease Signature details</label><input class="form-control" placeholder="First Name" type="text" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group"></div>
+              </div>
+            </div>
+            <div class="element-box-tp">
+              <fieldset class="form-group"></fieldset>
+              <legend><span>Governing Law</span></legend>
+            </div>
+            <div class="form-group">
+              <label for=""> The Lease Agreement shall be governed under the Laws in the State of </label><select class="form-control">
+                <option>
+                  Select State
+                </option>
+                <option>
+                  New York
+                </option>
+                <option>
+                  California
+                </option>
+                <option>
+                  Boston
+                </option>
+                <option>
+                  Texas
+                </option>
+                <option>
+                  Colorado
+                </option>
+              </select>
+            </div>
+            <a class="add-task-btn" data-target="#taskModal" data-toggle="modal" href="#"><i class="os-icon os-icon-ui-22"></i><span>Add Task</span></a>
+            <div class="form-buttons-w text-right">
+              <a class="btn btn-primary" data-target="#taskModal" data-toggle="modal">Submit Form</a>
+            </div>
+          </div>
+        </div>
+        <!--Modal - Edit Task-->
+        <div aria-hidden="true" class="modal fade" id="taskModal" role="dialog" tabindex="-1">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header faded smaller">
+                <div class="modal-title">
+                  <span>Assigned to:</span><img alt="" class="avatar" src="img/avatar1.jpg" /><span>Due Date: </span><strong>Sep 12th, 2017</strong>
+                </div>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="">Name</label><input class="form-control" placeholder="Enter task name" type="text" value="Visit Home Depot to find out what is needed to rebuild backyard patio" />
+                  </div>
+                  <div class="form-group">
+                    <label for="">Description</label><textarea class="form-control" name="" rows="3">The similar diesel only tell deference and likewise, thought, nonetheless, for ahead school. The were organization.</textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Media Attached</label>
+                    <div class="attached-media-w">
+                      <img src="img/portfolio9.jpg" /><img src="img/portfolio2.jpg" /><img src="img/portfolio12.jpg" /><a class="attach-media-btn" href="#"><i class="os-icon os-icon-ui-22"></i><span>Add Photos</span></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for=""> Due Date</label>
+                        <div class="date-input">
+                          <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/1978" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="">Priority</label><select class="form-control">
+                          <option>
+                            High Priority
+                          </option>
+                          <option>
+                            Normal Priority
+                          </option>
+                          <option>
+                            Low Priority
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer buttons-on-left">
+                <button class="btn btn-teal" type="button"> Save changes</button><button class="btn btn-link" data-dismiss="modal" type="button"> Cancel</button>
+              </div>
             </div>
           </div>
         </div>

@@ -9,21 +9,21 @@
             span 22%
       li.nav-item
         a.nav-link aria-expanded="false" data-toggle="tab" href="#tab_sales"  
-          span.tab-label Total Market Rent
+          span.tab-label Bitcoin
           span.tab-value $7,839.23
           span.badge.badge-success
             i.os-icon.os-icon-arrow-up6
             span 25%
       li.nav-item.d-none.d-xl-block
         a.nav-link aria-expanded="false" data-toggle="tab" href="#tab_sales"  
-          span.tab-label Accounts
+          span.tab-label Reports
           span.tab-value $839.11
           span.badge.badge-danger
             i.os-icon.os-icon-arrow-down6
             span 5%
       li.nav-item.d-none.d-xxxl-block
         a.nav-link aria-expanded="true" data-toggle="tab" href="#tab_sales"  
-          span.tab-label Reports
+          span.tab-label Transactions
           span.tab-value $1,434.12
           span.badge.badge-success
             i.os-icon.os-icon-arrow-up6
@@ -91,6 +91,8 @@
           canvas#liteLineChartV3 width="300" height="50" data-chart-data="13,28,19,24,43,49,40,35,42,46,38,32,45"
   .col-sm-2.d-none.d-xxl-block
     include ../_partials/elements/_donut_chart_1.slim
+  .col-sm-4.d-none.d-lg-block
+    include ../_partials/elements/_cta_1.slim
 .row.pt-2
   .col-6.col-sm-3.col-xxl-2
     a.element-box.el-tablo.centered.trend-in-corner.smaller href="#"

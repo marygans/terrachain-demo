@@ -135,7 +135,10 @@
                     option Missisippi
                     option Colorado
                     option Kansas
-           
+            .form-buttons.text-center
+              a.btn.btn-primary href="#"
+                i.os-icon.os-icon-plus
+                span Add additional landlord
             fieldset.form-group
             legend 
               span Tenant Details
@@ -179,6 +182,10 @@
                     option Missisippi
                     option Colorado
                     option Kansas
+            .form-buttons.text-center
+              a.btn.btn-primary href="#"
+                i.os-icon.os-icon-plus
+                span Add additional tenant
             .form-group
               label  List any business restrictions on the property.
               textarea.form-control rows="3"
@@ -213,7 +220,8 @@
               .col-sm-6
                 .form-group
                   label for=""  Lease Start Date
-                  input.form-control placeholder="Select Date" type="text" /
+                  .date-input
+                    input.single-daterange.form-control placeholder="Date of birth" type="text" value="04/12/2019" /
               .col-sm-6
                 .form-group
                   label for="" Lease End Date
@@ -245,8 +253,8 @@
               label  Describe the rent increases: (e.g. First Year - $1000.00, Second Year - $1250.00, etc.)
               textarea.form-control rows="3"
             fieldset.form-group
-              legend 
-                span Rent Structure
+            legend 
+              span Charges and Fees
             .form-group
               label for="" Do you want to specify late payment charges? 
               .form-check
@@ -358,50 +366,314 @@
               a.btn.btn-primary.step-trigger-btn href="#stepContent4"  Continue
           / Step 4
           #stepContent4.step-content
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Utilities
             .form-group
-              label for=""  Regular select
-              select.form-control
-                option Select State
-                option New York
-                option California
-                option Boston
-                option Texas
-                option Colorado
-            .row
-              .col-sm-6
-                .form-group
-                  label for=""  Date of Birth
-                  input.form-control placeholder="First Name" type="text" /
-              .col-sm-6
-                .form-group
-                  label for="" Country of Origin
-                  input.form-control placeholder="Last Name" type="text" /
+                label for=""  Who is responsible for paying the following utilities?
+            include ../_partials/tables/_table_utilities.slim
+            fieldset.form-group
+              legend 
+                span Parking and Storage
+            .form-group
+              label for=""  Will there be parking? included?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label for="" Will the spaces be shared or dedicated to the tenant?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | shared between tenants of the property only
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | dedicated to the tenant and customers only
+            .form-group
+              label for="" Is the parking located on-site of off-site?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | on the property
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | off-site
+            .form-group
+              label for="" Will there be a fee charged to the tenant for a parking?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            fieldset.form-group
+              legend 
+                span Furnishings
+            .form-group
+              label for="" Is furnishings included?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+              textarea.form-control rows="3"
+            fieldset.form-group
+              legend 
+                span Maintenance
+              .form-group
+                label for="" Who is responsible for the maintenance on the property?
+                include ../_partials/tables/_table_CAM.slim
+            fieldset.form-group
+              legend 
+                span Real Estate Taxes and Insurance
+              .form-group
+                label for="" Who is responsible for the real estate taxes on the property?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Landlord
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Tenant
+            .form-group
+              label for="" Who is responsible for the Property Damage and Liability Insurance on the property?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Landlord
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Tenant
+            .form-group
+              label  What will be the Minimum liability amount provided by the tenant?
+              textarea.form-control rows="3"
             .form-buttons-w.text-right
-            / Step 5
+              a.btn.btn-primary.step-trigger-btn href="#stepContent5"  Continue
+          
+
+          / Step 5
           #stepContent5.step-content
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Landlord and Tenant Improvements
             .form-group
-              label for=""  Regular select
-              select.form-control
-                option Select State
-                option New York
-                option California
-                option Boston
-                option Texas
-                option Colorado
+              label for="" Will the landlord be responsible for any Leasehold Improvements?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label  The landlord will be responsible for the following improvements:
+              textarea.form-control rows="3"
+            .form-group
+              label for="" Will the tenant be allowed to make Improvements to the property?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes, with the landlord’s consent
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Yes, with the landlord’s written consent
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option3" /
+                  | No
+            .form-group
+              label  Tenant Improvements described in detail below:
+              textarea.form-control rows="3"
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Sale of Property
+            .form-group
+              label for="" If the property is sold, will the landlord have the right to terminate the lease agreement? 
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+                  label for="" Enter the number of days notice the landlord must give the tenant
+                  input.form-control placeholder="e.g., 180 days" type="number" days
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Tenant Clauses
+            .form-group
+              label for="" Will the tenant be allowed to sublet the property?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes, with no restrictions
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Yes, with the landlord’s written consent
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option3" /
+                  | No
+            .form-group
+              label for="" Will pets be allowed on the premises?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes, with no restrictions
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Yes, with restrictions
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No; unless used for Americans with  Disability Act
+            .form-group
+              label  What are the restrictions?
+              textarea.form-control rows="3"
+            .form-group
+              label for="" Will the tenant have a Right of First Refusal of the property?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .form-group
+              label  How many days will the tenant have to accept or reject the offer to purchase? 
+              textarea.form-control rows="3"
+            .form-group
+              label for="" Will the tenant have an option to purchase the property during the lease?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
             .row
               .col-sm-6
                 .form-group
-                  label for=""  Date of Birth
-                  input.form-control placeholder="First Name" type="text" /
+                  label for=""  Purchase Price
+                  input.form-control placeholder="e.g., $100,000" type="number" /
               .col-sm-6
                 .form-group
-                  label for="" Country of Origin
-                  input.form-control placeholder="Last Name" type="text" /
+                  label for="" Deposit
+                  input.form-control placeholder="e.g., $100,000" type="number" /
             .form-buttons-w.text-right
-            / Step 3
+              a.btn.btn-primary.step-trigger-btn href="#stepContent6"  Continue
+          
+          
+          / Step 6
           #stepContent6.step-content
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Americans with Disabilities Act
             .form-group
-              label for=""  Regular select
+              label for="" Who will be responsible for the property being in compliance with the Americans with Disabilities Act?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Landlord
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Tenant
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Disputes
+            .form-group
+              label for="" What happens if the Landlord and Tenant get into a dispute?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Mediation then Arbitration
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Mediation then Litigation
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Litigation
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | Other
+            .form-group
+              label for="" Will anyone, besides the Tenant, be  Personally Guarenteeing this Lease?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Additional Clauses
+            .form-group
+              label for="" You can add additional clauses if there is some information, details, terms or restrictions not present in the lease but you wish to include. In most leases, this is not necessary.
+            .form-buttons.text-center
+              button.mr-2.mb-2.btn.btn-primary.btn-lg type="button" Add additional clauses
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Notary Public
+            .form-group
+              label for="" Will this Lease be signed in the presence of a Notary Public?
+              .form-check
+                label.form-check-label
+                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+                  | Yes (recommended)
+              .form-check
+                label.form-check-label
+                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
+                  | No
+            .row
+              .col-sm-6
+                .form-group
+                  label for=""  Lease Signature details
+                  input.form-control placeholder="First Name" type="text" /
+              .col-sm-6
+                .form-group
+                 
+            .element-box-tp
+              fieldset.form-group
+              legend 
+                span Governing Law
+            .form-group
+              label for=""  The Lease Agreement shall be governed under the Laws in the State of 
               select.form-control
                 option Select State
                 option New York
@@ -409,14 +681,12 @@
                 option Boston
                 option Texas
                 option Colorado
-            .row
-              .col-sm-6
-                .form-group
-                  label for=""  Date of Birth
-                  input.form-control placeholder="First Name" type="text" /
-              .col-sm-6
-                .form-group
-                  label for="" Country of Origin
-                  input.form-control placeholder="Last Name" type="text" /
+            a.add-task-btn href="#" data-target="#taskModal" data-toggle="modal"
+              i.os-icon.os-icon-ui-22
+              span Add Task
             .form-buttons-w.text-right
-              button.btn.btn-primary Submit Form
+              a.btn.btn-primary data-target="#taskModal" data-toggle="modal" Submit Form
+
+        /! Modal - Edit Task
+        include ../forms/_wizard_submit_modal.slim
+             
