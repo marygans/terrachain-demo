@@ -6843,7 +6843,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: 1px solid #999; }
 
 .table.table-v2 tbody tr td {
-  border-color: #d1d8e6; }
+  border-color: #dcd1e6; }
 
 .controls-above-table {
   margin-bottom: 1rem; }
@@ -8309,7 +8309,7 @@ strong {
     background-color: #fff;
     background-image: none; }
   .all-wrapper.solid-bg-all {
-    background-color: #f2f4f8; }
+    background-color: #f5f2f8; }
     .all-wrapper.solid-bg-all .content-w {
       background-image: none; }
 
@@ -8356,7 +8356,7 @@ body.menu-side-right .layout-w {
   flex-direction: row-reverse; }
 
 .content-w {
-  background-color: #f2f4f8;
+  background-color: #f5f2f8;
   background-image: url("../img/bg-pattern.png");
   background-repeat: no-repeat;
   background-position: 20px 50px;
@@ -8785,7 +8785,7 @@ body.menu-side-right .layout-w {
         display: block; }
       .menu-w ul.main-menu > li.sub-header {
         text-transform: uppercase;
-        color: #448eef;
+        color: #3F1C65;
         font-size: 0.72rem;
         letter-spacing: 1px;
         padding-top: 20px;
@@ -8963,11 +8963,11 @@ body.menu-side-right .layout-w {
       .menu-w.sub-menu-style-inside ul.sub-menu:last-child li:last-child {
         border-bottom: none; }
   .menu-w.sub-menu-style-inside.sub-menu-color-bright ul.main-menu > li.active > a:before, .menu-w.sub-menu-style-inside.sub-menu-color-dark ul.main-menu > li.active > a:before {
-    color: #fff; }
+    color: #2E1170; }
   .menu-w.sub-menu-style-inside.sub-menu-color-bright ul.main-menu > li.active > a span, .menu-w.sub-menu-style-inside.sub-menu-color-dark ul.main-menu > li.active > a span {
-    color: #fff; }
+    color: #2E1170; }
   .menu-w.sub-menu-style-inside.sub-menu-color-bright ul.main-menu > li.active > a .icon-w, .menu-w.sub-menu-style-inside.sub-menu-color-dark ul.main-menu > li.active > a .icon-w {
-    color: #fff; }
+    color: #2E1170; }
   .menu-w.sub-menu-style-flyout .main-menu > li.has-sub-menu {
     position: relative; }
     .menu-w.sub-menu-style-flyout .main-menu > li.has-sub-menu > a:before {
@@ -10174,6 +10174,7 @@ body.menu-side-right .layout-w {
     float: right;
     position: relative;
     z-index: 2;
+    padding-right: 1rem;
     margin-top: -0.2rem; }
     .element-wrapper .element-actions select.form-control-sm, .element-wrapper .element-actions .input-group-sm > select.form-control,
     .element-wrapper .element-actions .input-group-sm > .input-group-prepend > select.input-group-text,
@@ -10740,7 +10741,7 @@ a.el-tablo {
     content: "";
     display: block;
     width: 3px;
-    background-color: #c0cadd;
+    background-color: #cfc0dd;
     top: 0px;
     bottom: 0px;
     left: 75px;
@@ -10749,7 +10750,7 @@ a.el-tablo {
     content: "";
     display: block;
     width: 20px;
-    background-color: #c0cadd;
+    background-color: #cfc0dd;
     top: 50%;
     height: 1px;
     left: 80px;
@@ -10782,7 +10783,7 @@ a.el-tablo {
     width: 12px;
     height: 12px;
     border: 2px solid #60769f;
-    background-color: #f2f4f8;
+    background-color: #f5f2f8;
     border-radius: 20px;
     transform: translateY(-50%);
     z-index: 2; }
@@ -18675,3 +18676,8 @@ Contents:
 .lease-snapshot img {
   width: 100%;
   margin-right: 5px; }
+
+.last-updated {
+  display: inline;
+  padding-left: 10px;
+  color: #bfc4c9; }

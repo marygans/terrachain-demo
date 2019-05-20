@@ -7,30 +7,45 @@
             option value="Pending" Today
             option value="Active" Last Week 
             option value="Cancelled" Last 30 Days
-      h6.element-header Sales Dashboard
+      .element-actions
+        form.form-inline.justify-content-sm-end
+      .element-actions
+        form.form-inline.justify-content-sm-end
+          a.btn.btn-primary.step-trigger-btn href="#stepContent2"  Create a lease
+
+      h6.element-header MITMCO | Greenlawn Offices
       .element-content
         .row
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Products Sold
-              .value 57
+              .label Net Operating Income
+              .value $45,400
               .trending.trending-up-basic
                 span 12%
                 i.os-icon.os-icon-arrow-up2
+              .last-updated
+                i.os-icon.os-icon-clock
+                span  1 min ago
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Gross Profit
-              .value $457
+              .label Total Revenue
+              .value $456,600
               .trending.trending-down-basic
                 span 12%
                 i.os-icon.os-icon-arrow-down
+              .last-updated
+                i.os-icon.os-icon-clock
+                span  1 day ago
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label New Customers
-              .value 125
+              .label Operatng Expenses
+              .value $12,500
               .trending.trending-down-basic
                 span 9%
                 i.os-icon.os-icon-arrow-down
+              .last-updated
+                i.os-icon.os-icon-clock
+                span  25 min ago
           .d-none.d-xxxl-block.col-xxxl-3
             a.element-box.el-tablo href="#"
               .label Refunds Processed
@@ -38,21 +53,53 @@
               .trending.trending-up-basic
                 span 12%
                 i.os-icon.os-icon-arrow-up2
+        .row
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label Current Cap Rate
+              .value 3.56%
+              .trending.trending-up-basic
+                span 4%
+                i.os-icon.os-icon-arrow-up2
+
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label true OpXx
+              .value $4,567
+              .trending.trending-down-basic
+                span 12%
+                i.os-icon.os-icon-arrow-down
+              .last-updated
+                i.os-icon.os-icon-clock
+                span  7 min ago
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label net OpEx
+              .value $3,604
+              .trending.trending-down-basic
+                span 9%
+                i.os-icon.os-icon-arrow-down
+              .last-updated
+                i.os-icon.os-icon-clock
+                span  1 min ago
 .row
-  .col-sm-8.col-xxxl-6
+  .col-sm-12.col-xxxl-9
     .element-wrapper
-      h6.element-header New Orders
+      h6.element-header Tenant Payments
       .element-box
         .table-responsive
           table.table.table-lightborder
             thead
               tr
-                th Customer
-                th Products
                 th.text-center Status
-                th.text-right Total
+                th Tenant
+                th Memo/Notes
+                th Products
+                th.text-right Amount
             tbody
               tr
+                td.text-center 
+                  .status-pill.red data-toggle="tooltip" data-title="Overdue"
                 td.nowrap John Mayers
                 td
                   .cell-image-list
@@ -60,32 +107,32 @@
                     .cell-img style="background-image: url(img/portfolio2.jpg)"
                     .cell-img style="background-image: url(img/portfolio12.jpg)"
                     .cell-img-more + 5 more
-                
-                td.text-center 
-                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Utilities
                 td.text-right $354
               tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Kelly Brans
                 td
                   .cell-image-list
                     .cell-img style="background-image: url(img/portfolio14.jpg)"
                     .cell-img style="background-image: url(img/portfolio8.jpg)"
-                
-                td.text-center 
-                  .status-pill.red data-toggle="tooltip" data-title="Cancelled"
+                td.nowrap Utilities
                 td.text-right $94
               tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Tim Howard
                 td
                   .cell-image-list
                     .cell-img style="background-image: url(img/portfolio16.jpg)"
                     .cell-img style="background-image: url(img/portfolio14.jpg)"
                     .cell-img style="background-image: url(img/portfolio5.jpg)"
-                
-                td.text-center 
-                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Utilities
                 td.text-right $156
               tr
+                td.text-center 
+                  .status-pill.yellow data-toggle="tooltip" data-title="Pending"
                 td.nowrap Joe Trulli
                 td
                   .cell-image-list
@@ -93,55 +140,16 @@
                     .cell-img style="background-image: url(img/portfolio5.jpg)"
                     .cell-img style="background-image: url(img/portfolio6.jpg)"
                     .cell-img-more + 2 more
-                
-                td.text-center 
-                  .status-pill.yellow data-toggle="tooltip" data-title="Pending"
                 td.text-right $1,120
               tr
+                td.text-center 
+                  .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Jerry Lingard
                 td
                   .cell-image-list
                     .cell-img style="background-image: url(img/portfolio9.jpg)"
-                
-                td.text-center 
-                  .status-pill.green data-toggle="tooltip" data-title="Complete"
+                td.nowrap Utilities
                 td.text-right $856
-
-  .col-sm-4.d-xxxl-none
-    /! START - Top Selling Chart
-    .element-wrapper
-      h6.element-header Top Selling Today
-      .element-box
-        .el-chart-w
-          canvas#donutChart width="120" height="120"
-          .inside-donut-chart-label
-            strong 142
-            span Total Orders
-        .el-legend.condensed
-          .row
-            .col-auto.col-xxxxl-6.ml-sm-auto.mr-sm-auto.col-6
-              .legend-value-w
-                .legend-pin.legend-pin-squared style="background-color: #6896f9;"
-                .legend-value 
-                  span Prada
-                  .legend-sub-value 14 Pairs
-              .legend-value-w
-                .legend-pin.legend-pin-squared style="background-color: #85c751;"
-                .legend-value 
-                  span Maui Jim
-                  .legend-sub-value 26 Pairs
-            .col-6.d-lg-none.d-xxl-block
-              .legend-value-w
-                .legend-pin.legend-pin-squared style="background-color: #806ef9;"
-                .legend-value 
-                  span Gucci
-                  .legend-sub-value 17 Pairs
-              .legend-value-w
-                .legend-pin.legend-pin-squared style="background-color: #d97b70;"
-                .legend-value 
-                  span Armani
-                  .legend-sub-value 12 Pairs
-    /! END - Top Selling Chart
 
   .d-none.d-xxxl-block.col-xxxl-6
     /! START - Questions per Product

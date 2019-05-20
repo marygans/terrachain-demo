@@ -56,6 +56,10 @@ $(function(){
 
     // SUB MENU
 
+    if($('.menu-w').hasClass('sub-menu-color-light')){
+      $('.sub-menu-color-selector').removeClass('selected');
+      $('.sub-menu-color-selector.color-light').addClass('selected');
+    }
     if($('.menu-w').hasClass('sub-menu-color-bright')){
       $('.sub-menu-color-selector').removeClass('selected');
       $('.sub-menu-color-selector.color-bright').addClass('selected');
@@ -64,20 +68,16 @@ $(function(){
       $('.sub-menu-color-selector').removeClass('selected');
       $('.sub-menu-color-selector.color-dark').addClass('selected');
     }
-    if($('.menu-w').hasClass('sub-menu-color-light')){
-      $('.sub-menu-color-selector').removeClass('selected');
-      $('.sub-menu-color-selector.color-light').addClass('selected');
-    }
 
     // SUB MENU STYLE
+    if($('.menu-w').hasClass('sub-menu-style-over')){
+      $('.sub-menu-style-selector').val('over');
+    }
     if($('.menu-w').hasClass('sub-menu-style-flyout')){
       $('.sub-menu-style-selector').val('flyout');
     }
     if($('.menu-w').hasClass('sub-menu-style-inside')){
       $('.sub-menu-style-selector').val('inside');
-    }
-    if($('.menu-w').hasClass('sub-menu-style-over')){
-      $('.sub-menu-style-selector').val('over');
     }
 
     // TOP BAR
@@ -126,16 +126,16 @@ $(function(){
     // MENU STYLE
     var menu_color_scheme = 'light';
     var menu_color_style = 'default';
+    if($('.menu-color-selector.selected').hasClass('color-light')){
+      menu_color_scheme = 'light';
+      menu_color_style = 'default';
+    }
     if($('.menu-color-selector.selected').hasClass('color-bright')){
       menu_color_scheme = 'dark';
       menu_color_style = 'bright';
     }
     if($('.menu-color-selector.selected').hasClass('color-dark')){
       menu_color_scheme = 'dark';
-      menu_color_style = 'default';
-    }
-    if($('.menu-color-selector.selected').hasClass('color-light')){
-      menu_color_scheme = 'light';
       menu_color_style = 'default';
     }
     if($('.menu-color-selector.selected').hasClass('color-transparent')){

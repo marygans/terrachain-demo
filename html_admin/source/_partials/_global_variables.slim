@@ -23,7 +23,7 @@
   - selected_link = 'index.html'
 
 - unless defined? show_demo_customizer
-  - show_demo_customizer = true
+  - show_demo_customizer = false
 
 /* 
   Setting default menu parameters, available values:
@@ -50,10 +50,10 @@
                   'color_scheme' => 'light',
                   'color_style' => 'transparent',
                   'layout' => 'compact',
-                  'sub_menu_style' => 'over',
+                  'sub_menu_style' => 'inside',
                   'sub_menu_color' => 'bright',
                   'selected_menu_color' => 'light',
-                  'activated_on' => 'hover',
+                  'activated_on' => 'click',
                   'show_logo_in_menu' => true,
                   'show_user_in_menu' => true,
                   'show_settings_in_menu' => true,
@@ -101,9 +101,9 @@
 
 // MENU ITEMS ARRAY
 - menu_arr = [{ 'href' => 'index.html', 
-              'group_header' => 'Layouts',
+              'group_header' => 'Portfolio',
               'icon' => 'os-icon os-icon-layout', 
-              'label' => 'Dashboard', 
+              'label' => 'Greenlawn Offices', 
               'items' => [{ 'href' => 'index.html', 'icon' => '', 'label' => 'Dashboard 1', 'items' => [] },
                           { 'href' => 'apps_crypto.html', 'icon' => '', 'label' => 'Crypto Dashboard <strong class="badge badge-danger">Hot</strong>', 'items' => [] },
                           { 'href' => 'apps_support_dashboard.html', 'icon' => '', 'label' => 'Dashboard 3', 'items' => [] },
@@ -114,7 +114,7 @@
 
             { 'href' => 'layouts_menu_top_image.html' , 
               'icon' => 'os-icon os-icon-layers', 
-              'label' => 'Menu Styles', 
+              'label' => 'Pioneer Building', 
               'items' => [{ 'href' => 'layouts_menu_side_full.html', 'icon' => '', 'label' => 'Side Menu Light', 'items' => [] },
                           { 'href' => 'layouts_menu_side_full_dark.html', 'icon' => '', 'label' => 'Side Menu Dark', 'items' => [] },
                           { 'href' => 'layouts_menu_side_transparent.html', 'icon' => '', 'label' => 'Side Menu Transparent <strong class="badge badge-danger">New</strong>', 'items' => [] },
@@ -134,7 +134,7 @@
                           { 'href' => 'layouts_menu_side_compact_click.html', 'icon' => '', 'label' => 'Menu Inside Click', 'items' => [] }]},
 
             { 'href' => 'apps_bank.html', 
-              'group_header' => 'Options',
+              'group_header' => 'Market',
               'icon' => 'os-icon os-icon-package', 
               'label' => 'Applications', 
               'items' => [{ 'href' => 'apps_email.html', 'icon' => '', 'label' => 'Email Application', 'items' => [] },
@@ -177,7 +177,16 @@
                           { 'href' => 'uikit_typography.html', 'icon' => '', 'label' => 'Typography', 'items' => [] }]},
 
             { 'href' => '#' , 
-              'group_header' => 'Elements',
+              'group_header' => 'Maintenance',
+              'icon' => 'os-icon os-icon-mail', 
+              'label' => 'Emails', 
+              'items' => [{ 'href' => 'emails_welcome.html', 'icon' => '', 'label' => 'Welcome Email', 'items' => [] },
+                          { 'href' => 'emails_order.html', 'icon' => '', 'label' => 'Order Confirmation', 'items' => [] },
+                          { 'href' => 'emails_payment_due.html', 'icon' => '', 'label' => 'Payment Due', 'items' => [] },
+                          { 'href' => 'emails_forgot.html', 'icon' => '', 'label' => 'Forgot Password', 'items' => [] },
+                          { 'href' => 'emails_activate.html', 'icon' => '', 'label' => 'Activate Account', 'items' => [] }]},
+            { 'href' => '#' , 
+              'group_header' => 'Documents',
               'icon' => 'os-icon os-icon-mail', 
               'label' => 'Emails', 
               'items' => [{ 'href' => 'emails_welcome.html', 'icon' => '', 'label' => 'Welcome Email', 'items' => [] },

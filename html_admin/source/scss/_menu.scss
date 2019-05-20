@@ -406,7 +406,7 @@
       }
       &.sub-header {
         text-transform: uppercase;
-        color: #448eef;
+        color: $primary;
         font-size: $font-size-base * 0.8;
         letter-spacing: 1px;
         padding-top: 20px;
@@ -684,13 +684,13 @@
     &.sub-menu-color-dark {
       ul.main-menu > li.active > a {
         &:before {
-          color: #fff;
+          color: #2E1170;
         }
         span {
-          color: #fff;
+          color: #2E1170;
         }
         .icon-w {
-          color: #fff;
+          color: #2E1170;
         }
       }
     }
