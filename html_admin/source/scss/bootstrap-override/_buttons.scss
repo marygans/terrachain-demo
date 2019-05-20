@@ -23,11 +23,11 @@
   &.solid {
     .btn-toggled {
       background-color: rgba(0,0,0,0.07);
-      color: rgba(0,0,0,0.6);
+      color:#fff;
       font-size: $font-size-base * 0.9;
       &.on, &:hover {
         background-color: $primary;
-        color: #fff;
+        color: #fff !important;
       }
     }
   }

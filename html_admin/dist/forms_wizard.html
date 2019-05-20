@@ -20,8 +20,8 @@
     <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" />
     <link href="css/main.css?version=4.4.0" rel="stylesheet" />
   </head>
-  <body class="menu-position-side menu-side-left full-screen with-content-panel">
-    <div class="all-wrapper with-side-panel solid-bg-all">
+  <body class="menu-position-side menu-side-left full-screen">
+    <div class="all-wrapper solid-bg-all">
       <div class="search-with-suggestions-w">
         <div class="search-with-suggestions-modal">
           <div class="element-search">
@@ -1463,9 +1463,6 @@
           <!--------------------
           END - Breadcrumbs
           -------------------->
-          <div class="content-panel-toggler">
-            <i class="os-icon os-icon-grid-squares-22"></i><span>Sidebar</span>
-          </div>
           <div class="content-i">
             <div class="content-box"><div class="element-wrapper">
   <div class="element-box">
@@ -1744,6 +1741,8 @@
             <div class="form-buttons text-center">
               <a class="btn btn-primary" href="#"><i class="os-icon os-icon-plus"></i><span>Add additional tenant</span></a>
             </div>
+            <fieldset class="form-group"></fieldset>
+            <legend><span>Additional Restrictions</span></legend>
             <div class="form-group">
               <label> List any business restrictions on the property.</label><textarea class="form-control" rows="3"></textarea>
             </div>
@@ -2721,7 +2720,7 @@
               <label for="">You can add additional clauses if there is some information, details, terms or restrictions not present in the lease but you wish to include. In most leases, this is not necessary.</label>
             </div>
             <div class="form-buttons text-center">
-              <button class="mr-2 mb-2 btn btn-primary btn-lg" type="button"></button><i class="os-icon os-icon-plus"></i><span>Add additional clauses</span>
+              <button class="mr-2 mb-2 btn btn-primary btn-lg" type="button">Add additional clauses</button>
             </div>
             <div class="element-box-tp">
               <fieldset class="form-group"></fieldset>
@@ -2783,23 +2782,31 @@
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header faded smaller">
-                <div class="modal-title">
-                  <span>Assigned to:</span><img alt="" class="avatar" src="img/avatar1.jpg" /><span>Due Date: </span><strong>Sep 12th, 2017</strong>
+                <div class="modal-title text-center">
+                  <span>Commercial Lease Agreement Snapshot</span>
                 </div>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
               </div>
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="">Name</label><input class="form-control" placeholder="Enter task name" type="text" value="Visit Home Depot to find out what is needed to rebuild backyard patio" />
-                  </div>
-                  <div class="form-group">
-                    <label for="">Description</label><textarea class="form-control" name="" rows="3">The similar diesel only tell deference and likewise, thought, nonetheless, for ahead school. The were organization.</textarea>
+                    <label for="">Lease Name</label><input class="form-control" placeholder="Enter task name" type="text" value="Washington Commercial Lease Agreement" />
+                    <div class="form-group"></div>
+                    <label for="">Description</label><textarea class="form-control" name="" rows="3">The lease agreement for MITMCO apartment building in downtown Seattle.</textarea>
+                    <div class="lease-snapshot">
+                      <img src="img/lease-snapshot.png" />
+                    </div>
                   </div>
                   <div class="form-group">
                     <label for="">Media Attached</label>
                     <div class="attached-media-w">
                       <img src="img/portfolio9.jpg" /><img src="img/portfolio2.jpg" /><img src="img/portfolio12.jpg" /><a class="attach-media-btn" href="#"><i class="os-icon os-icon-ui-22"></i><span>Add Photos</span></a>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for=""> Tenant Email</label>
+                    <div class="date-input">
+                      <input class="form-control" placeholder="Email Address" type="email" />
                     </div>
                   </div>
                   <div class="row">
@@ -2830,7 +2837,7 @@
                 </form>
               </div>
               <div class="modal-footer buttons-on-left">
-                <button class="btn btn-teal" type="button"> Save changes</button><button class="btn btn-link" data-dismiss="modal" type="button"> Cancel</button>
+                <button class="btn btn-teal" type="button"> Send to tenant</button><button class="btn btn-link" data-dismiss="modal" type="button"> Save for later</button>
               </div>
             </div>
           </div>
@@ -3055,182 +3062,6 @@
               END - Chat Popup Box
               -------------------->
             </div>
-            <!--------------------
-            START - Sidebar
-            -------------------->
-            <div class="content-panel">
-              <div class="content-panel-close">
-                <i class="os-icon os-icon-close"></i>
-              </div><!--------------------
-START - Support Agents
--------------------->
-<div class="element-wrapper">
-  <h6 class="element-header">
-    Support Agents
-  </h6>
-  <div class="element-box-tp">
-    <div class="profile-tile">
-      <a class="profile-tile-box" href="users_profile_small.html">
-        <div class="pt-avatar-w">
-          <img alt="" src="img/avatar1.jpg" />
-        </div>
-        <div class="pt-user-name">
-          John Mayers
-        </div>
-      </a>
-      <div class="profile-tile-meta">
-        <ul>
-          <li>
-            Last Login:<strong>Online Now</strong>
-          </li>
-          <li>
-            Tickets:<strong><a href="apps_support_index.html">12</a></strong>
-          </li>
-          <li>
-            Response Time:<strong>2 hours</strong>
-          </li>
-        </ul>
-        <div class="pt-btn">
-          <a class="btn btn-success btn-sm" href="apps_full_chat.html">Send Message</a>
-        </div>
-      </div>
-    </div>
-    <div class="profile-tile">
-      <a class="profile-tile-box" href="users_profile_small.html">
-        <div class="pt-avatar-w">
-          <img alt="" src="img/avatar3.jpg" />
-        </div>
-        <div class="pt-user-name">
-          Ben Gossman
-        </div>
-      </a>
-      <div class="profile-tile-meta">
-        <ul>
-          <li>
-            Last Login:<strong>Offline</strong>
-          </li>
-          <li>
-            Tickets:<strong><a href="apps_support_index.html">9</a></strong>
-          </li>
-          <li>
-            Response Time:<strong>3 hours</strong>
-          </li>
-        </ul>
-        <div class="pt-btn">
-          <a class="btn btn-secondary btn-sm" href="apps_full_chat.html">Send Message</a>
-        </div>
-      </div>
-    </div>
-    <div class="profile-tile">
-      <a class="profile-tile-box" href="users_profile_small.html">
-        <div class="pt-avatar-w">
-          <img alt="" src="img/avatar2.jpg" />
-        </div>
-        <div class="pt-user-name">
-          Ken Sorrons
-        </div>
-      </a>
-      <div class="profile-tile-meta">
-        <ul>
-          <li>
-            Last Login:<strong>Offline</strong>
-          </li>
-          <li>
-            Tickets:<strong><a href="apps_support_index.html">17</a></strong>
-          </li>
-          <li>
-            Response Time:<strong>1 hour</strong>
-          </li>
-        </ul>
-        <div class="pt-btn">
-          <a class="btn btn-danger btn-sm" href="apps_full_chat.html">Send Message</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--------------------
-END - Support Agents
--------------------->
-<div class="element-wrapper">
-  <h6 class="element-header">
-    Side Tables
-  </h6>
-  <div class="element-box">
-    <h5 class="form-header">
-      Table in white box
-    </h5>
-    <div class="form-desc">You can put a table tag inside an <code>.element-box</code> class wrapper and add <code>.table</code> class to it to get something like this:
-    </div>
-    <div class="controls-above-table">
-      <div class="row">
-        <div class="col-sm-12">
-          <a class="btn btn-sm btn-primary" href="#">Download CSV</a><a class="btn btn-sm btn-danger" href="#">Delete</a>
-        </div>
-      </div>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-lightborder">
-        <thead>
-          <tr>
-            <th>
-              Customer
-            </th>
-            <th class="text-center">
-              Status
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              John Mayers
-            </td>
-            <td class="text-center">
-              <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Kelly Brans
-            </td>
-            <td class="text-center">
-              <div class="status-pill red" data-title="Cancelled" data-toggle="tooltip"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Tim Howard
-            </td>
-            <td class="text-center">
-              <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Joe Trulli
-            </td>
-            <td class="text-center">
-              <div class="status-pill yellow" data-title="Pending" data-toggle="tooltip"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Fred Kolton
-            </td>
-            <td class="text-center">
-              <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-            </div>
-            <!--------------------
-            END - Sidebar
-            -------------------->
           </div>
         </div>
       </div>
