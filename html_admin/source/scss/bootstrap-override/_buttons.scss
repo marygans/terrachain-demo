@@ -55,7 +55,10 @@
 
 
 .btn-teal {
-  @include button-variant(#fff, #31C37F, rgba(0,0,0,0));
+  @include button-variant(#fff,#3F1C65, rgba(0,0,0,0));
+  &:hover {
+    color:#3F1C65;
+  }
 }
 
 .btn-link {

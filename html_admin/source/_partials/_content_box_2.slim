@@ -11,7 +11,7 @@
         form.form-inline.justify-content-sm-end
       .element-actions
         form.form-inline.justify-content-sm-end
-          a.btn.btn-primary.step-trigger-btn href="#stepContent2"  Create a lease
+          a[class="btn btn-secondary btn-sm" href="forms_wizard.html"] Create a lease
 
       h6.element-header MITMCO | Greenlawn Offices
       .element-content
@@ -53,35 +53,6 @@
               .trending.trending-up-basic
                 span 12%
                 i.os-icon.os-icon-arrow-up2
-        .row
-          .col-sm-4.col-xxxl-3
-            a.element-box.el-tablo href="#"
-              .label Current Cap Rate
-              .value 3.56%
-              .trending.trending-up-basic
-                span 4%
-                i.os-icon.os-icon-arrow-up2
-
-          .col-sm-4.col-xxxl-3
-            a.element-box.el-tablo href="#"
-              .label true OpXx
-              .value $4,567
-              .trending.trending-down-basic
-                span 12%
-                i.os-icon.os-icon-arrow-down
-              .last-updated
-                i.os-icon.os-icon-clock
-                span  7 min ago
-          .col-sm-4.col-xxxl-3
-            a.element-box.el-tablo href="#"
-              .label net OpEx
-              .value $3,604
-              .trending.trending-down-basic
-                span 9%
-                i.os-icon.os-icon-arrow-down
-              .last-updated
-                i.os-icon.os-icon-clock
-                span  1 min ago
 .row
   .col-sm-12.col-xxxl-9
     .element-wrapper
@@ -93,63 +64,93 @@
               tr
                 th.text-center Status
                 th Tenant
-                th Memo/Notes
-                th Products
-                th.text-right Amount
+                th Date due
+                th Category
+                th Amount
+                th Actions
             tbody
               tr
                 td.text-center 
                   .status-pill.red data-toggle="tooltip" data-title="Overdue"
                 td.nowrap John Mayers
-                td
-                  .cell-image-list
-                    .cell-img style="background-image: url(img/portfolio9.jpg)"
-                    .cell-img style="background-image: url(img/portfolio2.jpg)"
-                    .cell-img style="background-image: url(img/portfolio12.jpg)"
-                    .cell-img-more + 5 more
-                td.nowrap Utilities
-                td.text-right $354
+                td.nowrap 5/18/2019
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/phone1.png)"
+                /     .cell-img-more + 5 more
+                td.nowrap Utilities, CAM expenses
+                td.text-left $6,345
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Kelly Brans
-                td
-                  .cell-image-list
-                    .cell-img style="background-image: url(img/portfolio14.jpg)"
-                    .cell-img style="background-image: url(img/portfolio8.jpg)"
-                td.nowrap Utilities
-                td.text-right $94
+                td.nowrap 6/18/2019
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio14.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio8.jpg)"
+                td.nowrap CAM expenses, Rent
+                td.text-left $500
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Tim Howard
-                td
-                  .cell-image-list
-                    .cell-img style="background-image: url(img/portfolio16.jpg)"
-                    .cell-img style="background-image: url(img/portfolio14.jpg)"
-                    .cell-img style="background-image: url(img/portfolio5.jpg)"
-                td.nowrap Utilities
-                td.text-right $156
+                td.nowrap 6/18/2019
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio16.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio14.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio5.jpg)"
+                td.nowrap Taxes
+                td.text-left $3,456
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
               tr
                 td.text-center 
                   .status-pill.yellow data-toggle="tooltip" data-title="Pending"
                 td.nowrap Joe Trulli
-                td
-                  .cell-image-list
-                    .cell-img style="background-image: url(img/portfolio1.jpg)"
-                    .cell-img style="background-image: url(img/portfolio5.jpg)"
-                    .cell-img style="background-image: url(img/portfolio6.jpg)"
-                    .cell-img-more + 2 more
-                td.text-right $1,120
+                td.nowrap 7/18/2019
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio1.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio5.jpg)"
+                /     .cell-img style="background-image: url(img/portfolio6.jpg)"
+                /     .cell-img-more + 2 more
+                td.nowrap Taxes, CAM
+                td.text-left $5,120
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap Jerry Lingard
-                td
-                  .cell-image-list
-                    .cell-img style="background-image: url(img/portfolio9.jpg)"
+                td.nowrap 8/18/2019
+                / td
+                /   .cell-image-list
+                /     .cell-img style="background-image: url(img/portfolio9.jpg)"
                 td.nowrap Utilities
-                td.text-right $856
+                td.text-left $356
+                td.row-actions
+                  a href="#"
+                    i.os-icon.os-icon-phone
+                  a href="#"
+                    i.os-icon.os-icon-mail
 
   .d-none.d-xxxl-block.col-xxxl-6
     /! START - Questions per Product

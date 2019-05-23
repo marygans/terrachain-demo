@@ -73,19 +73,7 @@
                     option Colorado
                     option Washington
             .form-group
-              label for="" What is Tax Map, Lot, or Block Numbers of the property? 
-              input.form-control placeholder=("Tax Map ID") type="text" /
-            .form-group
-              input.form-control placeholder=("Lot Number") type="text" /
-            .form-group
-              input.form-control placeholder=("Block Number") type="text" /
-            .form-group
-              label for="" What is the deed book and page numbers to the property? 
-              input.form-control placeholder=("Book") type="text" /
-            .form-group
-              input.form-control placeholder=("Page") type="text" /
-            .form-group
-              label  List any additional details that should be included in the lease.
+              label  List any additional property details that should be included in the lease.
               textarea.form-control rows="3"
             .form-buttons-w.text-right
               a.btn.btn-primary.step-trigger-btn href="#stepContent2"  Continue
@@ -688,7 +676,7 @@
               i.os-icon.os-icon-ui-22
               span Add Task
             .form-buttons-w.text-right
-              a.btn.btn-primary data-target="#taskModal" data-toggle="modal" Submit Form
+              a.btn.btn-grey data-target="#taskModal" data-toggle="modal" Submit Form
 
         /! Modal - Edit Task
         include ../forms/_wizard_submit_modal.slim

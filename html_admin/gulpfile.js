@@ -33,6 +33,11 @@ gulp.task('move_images', function(){
     .pipe(gulp.dest("./dist/img/"));
 });
 
+gulp.task('move_lease', function(){
+  gulp.src("./source/misc/lease.doc")
+    .pipe(gulp.dest("./dist/lease/"));
+});
+
 gulp.task('move_js', function(){
   gulp.src("./source/js/**/*")
     .pipe(gulp.dest("./dist/js/"));

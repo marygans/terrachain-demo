@@ -28,8 +28,7 @@
                 span Add Photos
           .form-group
             label for=""  Tenant Email
-            .date-input
-              input.form-control placeholder="Email Address" type="email" /
+            input.form-control placeholder="Email Address" type="email" /
           .row
             .col-sm-6
               .form-group
@@ -43,6 +42,11 @@
                   option High Priority
                   option Normal Priority
                   option Low Priority
+      .form-buttons-w.text-center
+         a.btn.btn-primary href="lease.doc" target="_blank"
+          i.os-icon.os-icon-download
+          span Download
       .modal-footer.buttons-on-left
-        button.btn.btn-teal type="button"  Send to tenant
+        a[class="btn btn-teal" id="#submit-lease" href="layouts_menu_top_image.html" download="lease.dc"] Send to tenant
         button.btn.btn-link data-dismiss="modal" type="button"  Save for later
+        
