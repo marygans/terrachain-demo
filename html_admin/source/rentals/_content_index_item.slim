@@ -5,7 +5,7 @@
   .item-info
     .item-features
       .feature= "#{property[0]['bedrooms']} Bedrooms"
-      .feature Entire Home
+      .feature 10% of building space
     h3.item-title
       a href="rentals_single.html"
         = property[0]['title']
@@ -22,7 +22,7 @@
       .item-price
         strong= property[0]['price']
         span 
-          | /per night
+          | /per sqft.
       .item-buttons
         a.btn.btn-outline-primary href="rentals_single.html"
           span Details

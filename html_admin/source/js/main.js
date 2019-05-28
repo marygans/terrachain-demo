@@ -257,7 +257,7 @@ $(function(){
         labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
         datasets: [
           {
-            label: "Sold",
+            label: "value",
             fill: true,
             lineTension: 0.4,
             backgroundColor: liteLineGradient,
@@ -467,10 +467,10 @@ $(function(){
 
       // line chart data
       var lineData = {
-        labels: ["1", "5", "10", "15", "20", "25", "30", "35"],
+        labels: ["1 year", "2 years", "3 years", "4 years", "5 years", "6 years ", "7 years", "8 years "],
         datasets: [
           {
-            label: "Visitors Graph",
+            label: "Spike percent",
             fill: false,
             lineTension: 0.3,
             backgroundColor: "#fff",

@@ -106,6 +106,13 @@
     span + .os-icon {
       margin-left: $btn-padding-x-sm;
     }
+    &.message-buttons {
+      display: inline-block;
+      padding: 10px 15px 10px 15px;
+    }
+    &.message-buttons {
+      display: inline;
+    }
   }
   &.btn-rounded {
     border-radius: 40px;
@@ -119,7 +126,8 @@
     background-color: transparent;
     padding-left: 0px;
     padding-right: 0px;
-    text-decoration: none;
+    text-decoration: underline;
+    color: #3F1C65;
     span {
       border-bottom: 2px solid $primary;
     }

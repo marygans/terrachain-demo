@@ -4,7 +4,7 @@
   align-items: stretch;
   .logo-w {
     flex: 0 0 $filter-panel-width;
-    background-color: #4472fd;
+    background-color: #24293d;
     padding: 10px 20px;
     display:flex;
     align-items:center;
@@ -26,6 +26,7 @@
     .logo {
       display: inline-block;
       text-decoration: none;
+      padding: 0 80px 0px 0px;
     }
     .logo-element {
       content: "";

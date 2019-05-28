@@ -1,3 +1,5 @@
+- show_top_bar = false
+
 .element-wrapper
   .element-box
     form
@@ -6,15 +8,15 @@
           a.step-trigger.active href="#stepContent1"
             i.os-icon.os-icon-home
           a.step-trigger href="#stepContent2"
-            i.os-icon.os-icon-home
+            i.os-icon.os-icon-users
           a.step-trigger href="#stepContent3"
-            i.os-icon.os-icon-home
+            i.os-icon.os-icon-newspaper
           a.step-trigger href="#stepContent4"
-            i.os-icon.os-icon-home
+            i.os-icon.os-icon-dollar-sign
           a.step-trigger href="#stepContent5"
-            i.os-icon.os-icon-home
+            i.os-icon.os-icon-settings
           a.step-trigger href="#stepContent6"
-            i.os-icon.os-icon-home
+            i.os-icon.os-icon-checkmark
         / Step 1
         .step-contents
           #stepContent1.step-content.active
@@ -55,7 +57,7 @@
               input.form-control placeholder=("e.g., 10,000 sq ft") type="text" /
             .form-group
               label for="" Property Address 
-              input.form-control placeholder=("Enter email") type="email" /
+              input.form-control placeholder=("Enter Address") type="text" /
             .row
               .col-sm-6
                 .form-group
@@ -66,12 +68,12 @@
                   label for=""  Select State
                   select.form-control
                     option Select State
+                    option Washington
                     option New York
                     option California
                     option Boston
                     option Texas
                     option Colorado
-                    option Washington
             .form-group
               label  List any additional property details that should be included in the lease.
               textarea.form-control rows="3"
@@ -83,25 +85,25 @@
             fieldset.form-group
             legend 
               span Landlord Details
-            .form-group
-              label for="" Is the Landlord a business or individual?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | Business Entity
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | Individual
-            .form-group
-              label for=""  How many individuals?
-              select.form-control
-                option Select Number
-                option 1
-                option 2
-                option 3
-                option 4
-                option 5
+            / .form-group
+            /   label for="" Is the Landlord a business or individual?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | Business Entity
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | Individual
+            / .form-group
+            /   label for=""  How many individuals?
+            /   select.form-control
+            /     option Select Number
+            /     option 1
+            /     option 2
+            /     option 3
+            /     option 4
+            /     option 5
             .form-group
               label for=""  Landlord Name
               input.form-control placeholder=("Enter name") type="text" /
@@ -123,10 +125,6 @@
                     option Missisippi
                     option Colorado
                     option Kansas
-            .form-buttons.text-center
-              a.btn.btn-primary href="#"
-                i.os-icon.os-icon-plus
-                span Add additional landlord
             fieldset.form-group
             legend 
               span Tenant Details
@@ -140,15 +138,15 @@
                 label.form-check-label
                   input.form-check-input name="optionBusiness" type="radio" value="option2" /
                   | Individual
-            .form-group
-              label for=""  How many individuals?
-              select.form-control
-                option Select Number
-                option 1
-                option 2
-                option 3
-                option 4
-                option 5
+            / .form-group
+            /   label for=""  How many individuals?
+            /   select.form-control
+            /     option Select Number
+            /     option 1
+            /     option 2
+            /     option 3
+            /     option 4
+            /     option 5
             .form-group
               label for=""  Tenant Name
               input.form-control placeholder=("Enter name") type="text" /
@@ -171,9 +169,9 @@
                     option Colorado
                     option Kansas
             .form-buttons.text-center
-              a.btn.btn-primary href="#"
-                i.os-icon.os-icon-plus
-                span Add additional tenant
+                a.btn.btn-primary href="#"
+                  i.os-icon.os-icon-plus
+                  span Add additional tenant
             fieldset.form-group
             legend 
               span Additional Restrictions
@@ -193,9 +191,8 @@
             .form-group
               label for=""  Rent will be paid:
               select.form-control
-                option Select cadence
-                option Weekly
                 option Monthly
+                option Weekly
                 option Quarterly
                 option Every 6 months
                 option Yearly
@@ -203,7 +200,6 @@
             .form-group
               label for=""  Rent will be due on the:
               select.form-control
-                option Select day
                 option 1st
                 option 15th
                 option last day of the month
@@ -212,11 +208,12 @@
                 .form-group
                   label for=""  Lease Start Date
                   .date-input
-                    input.single-daterange.form-control placeholder="Date of birth" type="text" value="04/12/2019" /
+                    input.single-daterange.form-control placeholder="Start Date" type="text" value="06/12/2019" /
               .col-sm-6
                 .form-group
-                  label for="" Lease End Date
-                  input.form-control placeholder="Select Date" type="text" /
+                  label for=""  Lease End Date
+                  .date-input
+                    input.single-daterange.form-control placeholder="End Date" type="text" value="06/12/2024" /
             .form-group
               label for="" Will the rent amount be the same the entire lease period?
               .form-check
@@ -364,63 +361,63 @@
             .form-group
                 label for=""  Who is responsible for paying the following utilities?
             include ../_partials/tables/_table_utilities.slim
-            fieldset.form-group
-              legend 
-                span Parking and Storage
-            .form-group
-              label for=""  Will there be parking? included?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | Yes
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | No
-            .form-group
-              label for="" Will the spaces be shared or dedicated to the tenant?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | shared between tenants of the property only
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | dedicated to the tenant and customers only
-            .form-group
-              label for="" Is the parking located on-site of off-site?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | on the property
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | off-site
-            .form-group
-              label for="" Will there be a fee charged to the tenant for a parking?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | Yes
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | No
-            fieldset.form-group
-              legend 
-                span Furnishings
-            .form-group
-              label for="" Is furnishings included?
-              .form-check
-                label.form-check-label
-                  input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
-                  | Yes
-              .form-check
-                label.form-check-label
-                  input.form-check-input name="optionBusiness" type="radio" value="option2" /
-                  | No
-              textarea.form-control rows="3"
+            / fieldset.form-group
+            /   legend 
+            /     span Parking and Storage
+            / .form-group
+            /   label for=""  Will there be parking? included?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | Yes
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | No
+            / .form-group
+            /   label for="" Will the spaces be shared or dedicated to the tenant?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | shared between tenants of the property only
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | dedicated to the tenant and customers only
+            / .form-group
+            /   label for="" Is the parking located on-site of off-site?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | on the property
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | off-site
+            / .form-group
+            /   label for="" Will there be a fee charged to the tenant for a parking?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | Yes
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | No
+            / fieldset.form-group
+            /   legend 
+            /     span Furnishings
+            / .form-group
+            /   label for="" Is furnishings included?
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input checked="" name="optionBusiness" type="radio" value="option1" /
+            /       | Yes
+            /   .form-check
+            /     label.form-check-label
+            /       input.form-check-input name="optionBusiness" type="radio" value="option2" /
+            /       | No
+            /   textarea.form-control rows="3"
             fieldset.form-group
               legend 
                 span Maintenance
@@ -667,14 +664,12 @@
               label for=""  The Lease Agreement shall be governed under the Laws in the State of 
               select.form-control
                 option Select State
+                option Washington
                 option New York
                 option California
                 option Boston
                 option Texas
                 option Colorado
-            a.add-task-btn href="#" data-target="#taskModal" data-toggle="modal"
-              i.os-icon.os-icon-ui-22
-              span Add Task
             .form-buttons-w.text-right
               a.btn.btn-grey data-target="#taskModal" data-toggle="modal" Submit Form
 

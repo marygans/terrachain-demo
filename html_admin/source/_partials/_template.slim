@@ -19,10 +19,10 @@ html
     div[class="#{all_wrapper_class}"]
       - if top_bar_settings['above_menu']
         include ../_partials/_top_bar.slim
-      - if defined? show_onboarding
-        include ../_partials/onboarding/_onboarding_modal.slim
-      - if defined? show_onboarding_large
-        include ../_partials/onboarding/_onboarding_modal_large.slim
+      / - if defined? show_onboarding
+      /   include ../_partials/onboarding/_onboarding_modal.slim
+      / - if defined? show_onboarding_large
+      /   include ../_partials/onboarding/_onboarding_modal_large.slim
       - if true
         include ../_partials/_search_with_suggestions.slim
       .layout-w

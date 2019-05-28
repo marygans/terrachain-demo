@@ -1484,16 +1484,27 @@ a.el-tablo {
     border-radius: 12px;
     height: 6px;
   }
+  .bar-level-4,
+  .bar-level-5,
+  .bar-level-6,
+  .bar-level-7 {
+    border-radius: 2px;
+    height: 60px;
+  }
   &.blue, &.primary {
-    .bar-level-1 {
+    .bar-level-1,.bar-level-4 {
       background-color: #F2F2F2;
     }
-    .bar-level-2 {
-      background-color: lighten($primary, 20%);
+    .bar-level-2,.bar-level-5 {
+      background-color:#fd0000;
     }
-    .bar-level-3 {
-      background-color: darken($primary, 10%);
+    .bar-level-3,.bar-level-6 {
+      background-color:#31a800;
     }
+    .bar-level-7 {
+      background-color:#dcc312;
+    }
+
   }
 
   &.warning {
