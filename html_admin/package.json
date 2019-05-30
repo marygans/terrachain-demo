@@ -16,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/osetin/light-admin#readme",
   "devDependencies": {
+    "aws-sdk": "^2.464.0",
     "gulp": "^3.9.1",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
