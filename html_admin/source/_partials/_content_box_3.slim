@@ -103,8 +103,8 @@
         .el-chart-w
           canvas#donutChart width="120" height="120"
           .inside-donut-chart-label
-            strong 200 
-            span Total Units
+            strong 587,720  
+            span TOTAL SQ FT
         .el-legend
           .legend-value-w
             .legend-pin style="background-color: #6896f9;"
@@ -128,23 +128,25 @@
               tr
                 th.text-center Status
                 th Tenant
-                th Date due
-                th Category
-                th Amount
-                th lease risk
+                th Lease Expires
+                th Expense Breakdown
+                th Rent Amount
+                th Rent Increase
+                th Lease risk
                 th Actions
             tbody
               tr
                 td.text-center 
                   .status-pill.red data-toggle="tooltip" data-title="Overdue"
-                td.nowrap John Mayers
-                td.nowrap 5/18/2019
+                td.nowrap Tenant A
+                td.nowrap 5/18/2029
                 / td
                 /   .cell-image-list
                 /     .cell-img style="background-image: url(img/phone1.png)"
                 /     .cell-img-more + 5 more
-                td.nowrap Utilities, CAM expenses
+                td.nowrap 20%
                 td.text-left $6,345
+                td.text-left 1.25% (Annual)
                 td.os-progress-bar.blue
                   .bar-level-4[style="width: 100%"]
                     .bar-level-5[style="width: 50%"]
@@ -156,17 +158,16 @@
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
-                td.nowrap Kelly Brans
-                td.nowrap 6/18/2019
+                td.nowrap Tenant B
+                td.nowrap 6/18/2029
                 / td
                 /   .cell-image-list
                 /     .cell-img style="background-image: url(img/portfolio14.jpg)"
                 /     .cell-img style="background-image: url(img/portfolio8.jpg)"
-                td.nowrap CAM expenses, Rent
-                td.text-left $500
-                td.os-progress-bar.blue
-                  .bar-level-4[style="width: 100%"]
-                    .bar-level-5[style="width: 50%"]
+                td.nowrap 20%
+                td.text-left $5,000
+                td.text-left 1.81% (Annual)
+                a[class="btn btn-secondary btn-sm" href="forms_wizard.html"] Create a lease
                 td.row-actions
                   a href="#"
                     i.os-icon.os-icon-phone
@@ -175,15 +176,16 @@
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
-                td.nowrap Tim Howard
-                td.nowrap 6/18/2019
+                td.nowrap Tenant C
+                td.nowrap 6/18/2029
                 / td
                 /   .cell-image-list
                 /     .cell-img style="background-image: url(img/portfolio16.jpg)"
                 /     .cell-img style="background-image: url(img/portfolio14.jpg)"
                 /     .cell-img style="background-image: url(img/portfolio5.jpg)"
-                td.nowrap Taxes
+                td.nowrap 10%
                 td.text-left $3,456
+                td.text-left 1.05% (Annual)
                 td.os-progress-bar.blue
                   .bar-level-4[style="width: 100%"]
                     .bar-level-5[style="width: 50%"]
@@ -195,16 +197,17 @@
               tr
                 td.text-center 
                   .status-pill.yellow data-toggle="tooltip" data-title="Pending"
-                td.nowrap Joe Trulli
-                td.nowrap 7/18/2019
+                td.nowrap Tenant D
+                td.nowrap 7/18/2029
                 / td
                 /   .cell-image-list
                 /     .cell-img style="background-image: url(img/portfolio1.jpg)"
                 /     .cell-img style="background-image: url(img/portfolio5.jpg)"
                 /     .cell-img style="background-image: url(img/portfolio6.jpg)"
                 /     .cell-img-more + 2 more
-                td.nowrap Taxes, CAM
+                td.nowrap 10%
                 td.text-left $5,120
+                td.text-left 1.15% (Annual)
                 td.os-progress-bar.blue
                   .bar-level-4[style="width: 100%"]
                     .bar-level-5[style="width: 50%"]
@@ -216,13 +219,14 @@
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
-                td.nowrap Jerry Lingard
-                td.nowrap 8/18/2019
+                td.nowrap Tenant E
+                td.nowrap 8/18/2029
                 / td
                 /   .cell-image-list
                 /     .cell-img style="background-image: url(img/portfolio9.jpg)"
-                td.nowrap Utilities
-                td.text-left $356
+                td.nowrap 25%
+                td.text-left $4,056
+                td.text-left 1.60% (Annual)
                 td.os-progress-bar.blue
                   .bar-level-4[style="width: 100%"]
                     .bar-level-5[style="width: 50%"]

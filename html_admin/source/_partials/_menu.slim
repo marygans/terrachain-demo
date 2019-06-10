@@ -17,11 +17,11 @@ div[class="#{menu_class}"]
     .logo-w
       a.logo href="index.html"
         .logo-element
-        .logo-label Terra chain
+        .logo-label terrachain
   - if menu_settings['show_search_in_menu']
     include ../_partials/top_bar/_search.slim
     include ../_partials/top_bar/_messages.slim
-  h1.menu-page-header MITMCO | Greenlawn Offices
+  h1.menu-page-header Spirit Tower Office Building
   ul.main-menu
     - menu_arr.each do |menu_item|
       - if (defined?(menu_item['group_header']) && menu_item['group_header'])

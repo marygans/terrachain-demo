@@ -117,26 +117,7 @@
       text-decoration: none;
     }
     .logo-element {
-      content: "";
-      width: 26px;
-      height: 26px;
-      border-radius: 15px;
-      position: relative;
-      background-color: lighten($primary, 30%);
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 20px;
-      transition: all 0.2s ease;
-      &:after {
-        content: "";
-        width: 26px;
-        height: 26px;
-        background-color: #fff;
-        border-radius: 15px;
-        right: -20px;
-        position: absolute;
-        transition: all 0.2s ease;
-      }
+      
     }
     .logo:hover {
       .logo-element {

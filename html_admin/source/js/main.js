@@ -632,13 +632,13 @@ $(function(){
       // donut chart data
       var data = {
         labels: [
-            "Red", "Blue", "Yellow", "Green", "Purple"
+            "occupied by tenant"
         ],
         datasets: [
             {
                 data: [300, 50, 100, 30, 70],
-                backgroundColor: [ "#5797fc", "#7e6fff", "#4ecc48", "#ffcc29", "#f37070" ],
-                hoverBackgroundColor: [ "#5797fc", "#7e6fff", "#4ecc48", "#ffcc29", "#f37070" ],
+                backgroundColor: [ "#5797fc"],
+                hoverBackgroundColor: [ "#5797fc" ],
                 borderWidth: 0 
             }]
       };
@@ -671,13 +671,13 @@ $(function(){
       // donut chart data
       var data1 = {
         labels: [
-            "Red", "Blue", "Yellow", "Green", "Purple"
+             "Blue", "Yellow"
         ],
         datasets: [
             {
-                data: [300, 50, 100, 30, 70],
-                backgroundColor: [ "#5797fc", "#7e6fff", "#4ecc48", "#ffcc29", "#f37070" ],
-                hoverBackgroundColor: [ "#5797fc", "#7e6fff", "#4ecc48", "#ffcc29", "#f37070" ],
+                data: [400],
+                backgroundColor: [ "#5797fc"],
+                hoverBackgroundColor: [ "#5797fc"],
                 borderWidth: 6,
                 hoverBorderColor: 'transparent'
             }]

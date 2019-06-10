@@ -38,6 +38,9 @@
   &.compact {
     padding-bottom: 2rem;
   }
+  &.portfolio-header {
+    margin: 2rem;
+  }
   &.folded {
     padding-bottom: 2rem;
     .element-header {
@@ -109,7 +112,7 @@
   }
   .element-header {
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding-bottom: 1rem;
+    padding:1rem;
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
@@ -1451,6 +1454,8 @@ a.el-tablo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    &.header {
+      margin-left: 2rem;}
     span {
       font-size: $font-size-base * 0.8;
       &.bigger {
@@ -1475,9 +1480,16 @@ a.el-tablo {
       &.info {
         color: #456CF9;
       }
+      &.camex {
+        color: #dcc312;
+      }
+      &.misc {
+        color: #dc12a7
+      }
     }
   }
 
+  .bar-level-0,
   .bar-level-1,
   .bar-level-2,
   .bar-level-3 {
@@ -1496,13 +1508,16 @@ a.el-tablo {
       background-color: #F2F2F2;
     }
     .bar-level-2,.bar-level-5 {
-      background-color:#fd0000;
+      background-color:#142390;
     }
     .bar-level-3,.bar-level-6 {
-      background-color:#31a800;
+      background-color:#147990
     }
     .bar-level-7 {
       background-color:#dcc312;
+    }
+    .bar-level-0 {
+      background-color:#19abf1;
     }
 
   }

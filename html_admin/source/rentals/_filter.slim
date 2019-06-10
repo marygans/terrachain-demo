@@ -14,7 +14,8 @@
     h6.filter-header
       | Map View
     .filter-body
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26466.220546263787!2d-118.35266418131052!3d33.98540355993257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b79824efa317%3A0x29dd07e1734487f2!2sPark+Mesa+Heights%2C+Los+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1502593931845" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      /<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26466.220546263787!2d-118.35266418131052!3d33.98540355993257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b79824efa317%3A0x29dd07e1734487f2!2sPark+Mesa+Heights%2C+Los+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1502593931845" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=47.6180385,-122.32558590000001&amp;q=305%20Harrison%20St%2C%20Seattle%2C%20WA%2098109+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
   .filter-w
     .filter-toggle
       i.os-icon-minus.os-icon
@@ -23,14 +24,16 @@
     .filter-body
       .toggled-buttons
         a.btn.btn-toggled.on href="#" Show All
-        a.btn.btn-toggled.off href="#" For Rent
-        a.btn.btn-toggled.off href="#" For Sale
+        a.btn.btn-toggled.off href="#" Offices
+        a.btn.btn-toggled.off href="#" Warehouse
+        a.btn.btn-toggled.off href="#" Retail
+        a.btn.btn-toggled.off href="#" Multifamily
 
   .filter-w
     .filter-toggle
       i.os-icon-minus.os-icon
     h6.filter-header
-      | Price Range
+      | Net Operating Income
     .filter-body
       input.ion-range-slider type="text"/
 
@@ -38,33 +41,32 @@
     .filter-toggle
       i.os-icon-minus.os-icon
     h6.filter-header
-      | Number of Bedrooms
+      | Occupancy of building
     .filter-body
       .toggled-buttons.solid
-        a.btn.btn-toggled.off href="#" 1+
-        a.btn.btn-toggled.off href="#" 2+
-        a.btn.btn-toggled.off href="#" 3+
-        a.btn.btn-toggled.on href="#" 4+
-        a.btn.btn-toggled.off href="#" 5+
+        a.btn.btn-toggled.off href="#" < 25%
+        a.btn.btn-toggled.off href="#" < 50%
+        a.btn.btn-toggled.off href="#" < 75%
+        a.btn.btn-toggled.on href="#" < 100%
 
-  .filter-w
-    .filter-toggle
-      i.os-icon-minus.os-icon
-    h6.filter-header
-      | Features
-    .filter-body
-      select.select2 name="" multiple="true"
-        option Solar Power
-        option Open Space
-        option selected="true" Backyard
-        option Washer
-        option selected="true" Garage
+  / .filter-w
+  /   .filter-toggle
+  /     i.os-icon-minus.os-icon
+  /   h6.filter-header
+  /     | Features
+  /   .filter-body
+  /     select.select2 name="" multiple="true"
+  /       option Solar Power
+  /       option Open Space
+  /       option selected="true" Backyard
+  /       option Washer
+  /       option selected="true" Garage
 
   .filter-w.collapsed
     .filter-toggle
       i.os-icon-minus.os-icon
     h6.filter-header
-      | Posted by Agent
+      | Year built
     .filter-body
       input.ion-range-slider type="text"/
 
@@ -72,9 +74,14 @@
     .filter-toggle
       i.os-icon-minus.os-icon
     h6.filter-header
-      | Time on Market
+      | Time left on lease
     .filter-body
-      input.ion-range-slider type="text"/
+      .toggled-buttons.solid
+        a.btn.btn-toggled.off href="#" < 1 year
+        a.btn.btn-toggled.off href="#" < 2 years
+        a.btn.btn-toggled.off href="#" < 3 years
+        a.btn.btn-toggled.on href="#" < 4 years
+        a.btn.btn-toggled.on href="#" > 4 years
 /!
   ------------------
   END - Property Index Filters
