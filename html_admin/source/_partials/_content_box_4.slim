@@ -67,7 +67,7 @@
                   .bar-label-right
                     span.info Repair
                   .bar-label-right
-                    span.misc Total budget: $10M
+                    span.misc Total estimated budget: $10M
                 .bar-level-4[style="width: 100%"]
                   .bar-level-5[style="width: 75%"]
                     .bar-level-7[style="width: 65%"]
@@ -238,22 +238,35 @@
     .element-wrapper
       h6.element-header Income Forecast
       .element-box
-        .os-tabs-w
-          .os-tabs-controls
-            ul.nav.nav-tabs.smaller
-              li.nav-item
-                a.nav-link.active data-toggle="tab" href="#tab_overview" Overview
-              li.nav-item
-                a.nav-link data-toggle="tab" href="#tab_sales" Expenses
-            ul.nav.nav-pills.smaller.d-none.d-xl-flex
-              li.nav-item
-                a.nav-link data-toggle="tab" href="#" Today
-              li.nav-item
-                a.nav-link.active data-toggle="tab" href="#" 7 Days
-              li.nav-item
-                a.nav-link data-toggle="tab" href="#" 14 Days
-              li.nav-item
-                a.nav-link data-toggle="tab" href="#" Last Month
+        .tickets-filter
+				  .form-group.mr-3
+					  label.d-none.d-md-inline-block.mr-2 Status
+					  select.form-control-sm
+					  	option Closed
+						  option Open
+						  option Pending
+				  .form-group.mr-1
+					  label.d-none.d-md-inline-block.mr-2 Agent
+					  select.form-control-sm
+						  option John Mayers
+						  option Phil Collins
+						  option Ray Donovan
+        / .os-tabs-w
+        /   .os-tabs-controls
+        /     ul.nav.nav-tabs.smaller
+        /       li.nav-item
+        /         a.nav-link.active data-toggle="tab" href="#tab_overview" Overview
+        /       li.nav-item
+        /         a.nav-link data-toggle="tab" href="#tab_sales" Expenses
+        /     ul.nav.nav-pills.smaller.d-none.d-xl-flex
+        /       li.nav-item
+        /         a.nav-link data-toggle="tab" href="#" Today
+        /       li.nav-item
+        /         a.nav-link.active data-toggle="tab" href="#" 7 Days
+        /       li.nav-item
+        /         a.nav-link data-toggle="tab" href="#" 14 Days
+        /       li.nav-item
+        /         a.nav-link data-toggle="tab" href="#" Last Month
 
           .tab-content
             #tab_overview.tab-pane.active
@@ -261,9 +274,15 @@
                 .label Current Net Revenue
                 .value $12,537
               .el-chart-w
-                canvas#lineChart width="600px" height="150px"
+                canvas#barChart1 width="600" height="450"
             #tab_sales.tab-pane
+              .el-tablo.bigger
+                .label Tenant Expenses
+                .value $5,750
+              .el-chart-w
+                canvas#lineChart width="600px" height="150px"
             #tab_conversion.tab-pane
+        
   .col-sm-12.col-xxl-6
     / .element-wrapper
     /   h6.element-header Recent Payments

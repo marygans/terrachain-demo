@@ -5,7 +5,7 @@
   ],
   "description": "Powerful Dashboard/Admin HTML template built on top of Bootstrap",
   "main": [
-    "index.html",
+    "auth_login.html",
     "main.js"
   ],
   "moduleType": [

@@ -467,7 +467,7 @@ $(function(){
 
       // line chart data
       var lineData = {
-        labels: ["1 year", "2 years", "3 years", "4 years", "5 years", "6 years ", "7 years", "8 years "],
+        labels: ["Tenant A", "Tenant B", "Tenant C", "Tenant D", "Tenant E", "Tenant F", "Tenant G", "Tenant H"],
         datasets: [
           {
             label: "Spike percent",
@@ -546,36 +546,43 @@ $(function(){
       // -----------------
       new Chart(barChart1, {
         type: 'bar',
-        data: barData1,
-        options: {
+        data: {
+          labels: ["Tenant A","Tenant B","Tenant C","Tenant D","Tenant E","Tenant F","Tenant G","Tenant H","Tenant J"],
+          datasets: [{
+            label: 'Budgeted',
+            backgroundColor: "#5797fc",
+            data: [12, 59, 5, 56, 58,12, 59, 70, 45],
+          }, {
+            label: 'Actual',
+            backgroundColor: "#ac0606",
+            data: [12, 15, 5, 56, 58, 12, 59, 12, 74],
+          }],
+        },
+      options: {
+          tooltips: {
+            displayColors: true,
+            callbacks:{
+              mode: 'x',
+            },
+          },
           scales: {
             xAxes: [{
-              display: false,
-              ticks: {
-                fontSize: '11',
-                fontColor: '#969da5'
-              },
+              stacked: true,
               gridLines: {
-                  color: 'rgba(0,0,0,0.05)',
-                  zeroLineColor: 'rgba(0,0,0,0.05)'
+                display: false,
               }
             }],
             yAxes: [{
+              stacked: true,
               ticks: {
-                beginAtZero: true
+                beginAtZero: true,
               },
-              gridLines: {
-                  color: 'rgba(0,0,0,0.05)',
-                  zeroLineColor: '#6896f9'
-              }
+              type: 'linear',
             }]
           },
-          legend: {
-            display: false
-          },
-          animation:{
-              animateScale:true
-          }
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: { position: 'bottom' },
         }
       });
     }

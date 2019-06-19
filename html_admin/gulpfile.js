@@ -10,8 +10,8 @@ gulp.task('slim', function(){
   gulp.src("./source/**/[^_]*.slim")
     .pipe(slim({ chdir: true, pretty: true, include: true }))
     .pipe(rename(function (file) {
-      if((file.basename === 'index') && (file.dirname === 'layouts')){
-        file.basename = 'index';
+      if((file.basename === 'login') && (file.dirname === 'auth')){
+        file.basename = 'login';
       }else{
         file.basename = file.dirname + '_' + file.basename;
       }

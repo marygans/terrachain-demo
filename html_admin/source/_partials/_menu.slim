@@ -23,28 +23,28 @@ div[class="#{menu_class}"]
     include ../_partials/top_bar/_messages.slim
   h1.menu-page-header Spirit Tower Office Building
   ul.main-menu
-    - menu_arr.each do |menu_item|
-      - if (defined?(menu_item['group_header']) && menu_item['group_header'])
-        li.sub-header
-          span= menu_item['group_header']
-      - menu_item_class = (menu_item['href'] == selected_link) ? 'selected' : ''
-      - menu_item_class+= (menu_item['items'].count > 0) ? ' has-sub-menu' : ''
-      li[class="#{menu_item_class}"]
-        a href="#{menu_item['href']}"
-          .icon-w
-            div[class="#{menu_item['icon']}"]
-          span #{menu_item['label']}
-        - if (menu_item['items'].count > 0)
-          .sub-menu-w
-            .sub-menu-header == menu_item['label']
-            .sub-menu-icon
-              i[class="#{menu_item['icon']}"]
-            .sub-menu-i
-              ul.sub-menu
-                - per_column = (menu_item['items'].count > 10 || menu_item['items'].count == 6) ? 6 : 5
-                - menu_item['items'].each_with_index do |sub_menu_item, index|
-                  - if ((index % per_column) == 0) && (index != 0)
-                    </ul><ul class="sub-menu">
-                  li
-                    a href="#{sub_menu_item['href']}" 
-                      == sub_menu_item['label']
+    / - menu_arr.each do |menu_item|
+    /   - if (defined?(menu_item['group_header']) && menu_item['group_header'])
+    /     li.sub-header
+    /       span= menu_item['group_header']
+    /   - menu_item_class = (menu_item['href'] == selected_link) ? 'selected' : ''
+    /   - menu_item_class+= (menu_item['items'].count > 0) ? ' has-sub-menu' : ''
+    /   li[class="#{menu_item_class}"]
+    /     a href="#{menu_item['href']}"
+    /       .icon-w
+    /         div[class="#{menu_item['icon']}"]
+    /       span #{menu_item['label']}
+    /     - if (menu_item['items'].count > 0)
+    /       .sub-menu-w
+    /         .sub-menu-header == menu_item['label']
+    /         .sub-menu-icon
+    /           i[class="#{menu_item['icon']}"]
+    /         .sub-menu-i
+    /           ul.sub-menu
+    /             - per_column = (menu_item['items'].count > 10 || menu_item['items'].count == 6) ? 6 : 5
+    /             - menu_item['items'].each_with_index do |sub_menu_item, index|
+    /               - if ((index % per_column) == 0) && (index != 0)
+    /                 </ul><ul class="sub-menu">
+    /               li
+    /                 a href="#{sub_menu_item['href']}" 
+    /                   == sub_menu_item['label']

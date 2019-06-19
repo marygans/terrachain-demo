@@ -164,6 +164,18 @@ legend {
 .test{
   float: right;
   font-weight: 600;
+  color: #684390;
+  padding-right: 100px;
+  &.actual {
+    color: green;
+  }
+  &.exceed {
+    color: red;
+  }
+}
+.test-header{
+  float: right;
+  font-weight: 600;
   color: black;
   padding-right: 100px;
 }
