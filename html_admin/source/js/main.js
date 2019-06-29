@@ -547,15 +547,15 @@ $(function(){
       new Chart(barChart1, {
         type: 'bar',
         data: {
-          labels: ["Tenant A","Tenant B","Tenant C","Tenant D","Tenant E","Tenant F","Tenant G","Tenant H","Tenant J"],
+          labels: ["Tenant A","Tenant B","Tenant C","Tenant D","Tenant E"],
           datasets: [{
             label: 'Budgeted',
             backgroundColor: "#5797fc",
-            data: [12, 59, 5, 56, 58,12, 59, 70, 45],
+            data: [24, 59, 30, 45, 58],
           }, {
             label: 'Actual',
             backgroundColor: "#ac0606",
-            data: [12, 15, 5, 56, 58, 12, 59, 12, 74],
+            data: [0, 0, 0, 45, 0],
           }],
         },
       options: {
@@ -639,7 +639,8 @@ $(function(){
       // donut chart data
       var data = {
         labels: [
-            "occupied by tenant"
+            "occupied by tenant",
+            "unoccupied"
         ],
         datasets: [
             {

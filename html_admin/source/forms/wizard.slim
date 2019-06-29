@@ -1,3 +1,12 @@
 - content_box_file = '../forms/_content_wizard.slim'
 
 include ../_partials/_template.slim
+
+- show_top_bar = false
+
+- custom_menu_settings = Hash.new
+- custom_menu_settings['color_scheme'] = 'dark'
+- custom_menu_settings['color_style'] = 'bright'
+- custom_menu_settings['position'] = 'top'
+- custom_menu_settings['layout'] = 'compact'
+- custom_menu_settings['with_image'] = false

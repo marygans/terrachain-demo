@@ -144,6 +144,9 @@
   
   .element-search {
     position: relative;
+    display: inline;
+    justify-items: baseline;
+    display: flex;
     &:before {
       @include osfont();
       position: absolute;
@@ -153,7 +156,28 @@
       font-size: 20px;
       content: "\e92c";
       color: rgba(0,0,0,0.2);
+      &.align-abstract {
+        display: flex;
+        align-items: baseline;
+      }
     }
+    
+    .element-search-aligned {
+      display: inline;
+      justify-items: baseline;
+      position: relative;
+      &:before {
+        @include osfont();
+        position: absolute;
+        left: 15px;
+        top: 48%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        content: "\e92c";
+        color: rgba(0,0,0,0.2);
+      }
+    }
+
     input {
       border: none;
       box-shadow: none;
@@ -448,6 +472,7 @@ a.el-tablo {
   padding-top: 1.5rem;
   margin-top: 2rem;
 }
+
 
 .el-legend {
   .legend-value-w {

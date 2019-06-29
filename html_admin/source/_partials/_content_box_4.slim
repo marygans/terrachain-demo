@@ -6,7 +6,7 @@
         .row
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Total Cashflow
+              .label Total Cashflows from Operating Activities
               .value $15,400
               .trending.trending-up-basic
                 /span 12%
@@ -17,7 +17,7 @@
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
               .label Net Operating Income
-              .value $8,600
+              .value $92,000,000
               .trending.trending-down-basic
                 /span 12%
                 /i.os-icon.os-icon-arrow-down
@@ -27,7 +27,7 @@
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
               .label Net Operatng Expenses
-              .value $4,500
+              .value $40,155,131
               .trending.trending-down-basic
                 /span 9%
                 /i.os-icon.os-icon-arrow-down
@@ -75,16 +75,16 @@
               .os-progress-bar.blue
                 .bar-labels
                   .bar-label-left
-                    span.positive Current Expenses: $7.5M
+                    span.positive Current Expenses: $40.15M
                   .bar-label-left
-                    span.negative Remaining $2.5M
+                    span.negative Over budget $10.15M
           .col-md-6
             .padded.b-l.b-r-xl
               .element-info-with-icon.smaller
                 .element-info-icon
                   .os-icon.os-icon-bar-chart-stats-up
                 .element-info-text
-                  h5.element-inner-header Expenses for tenants
+                  h5.element-inner-header Tenant Expenses Coverage
                   .element-inner-desc 
                   .dashboard-last-updated
                     i.os-icon.os-icon-clock
@@ -92,30 +92,48 @@
               .os-progress-bar.blue
                 .bar-labels
                   .bar-label-left
-                    span Tenant A
+                    span Vacant Unit A
                     /span.positive +10
                   .bar-label-right
-                    span.info 25% of $1,000
+                    span.info Vacant
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 25%"]
+                  .bar-level-0[style="width: 0%"]
               .os-progress-bar.primary
                 .bar-labels
                   .bar-label-left
                     span Tenant B
                     /span.negative .-5
                   .bar-label-right
-                    span.info 40% of $2,000
+                    span.info 100% of <b>$6M</b> budget total
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 40%"]
+                  .bar-level-0[style="width: 100%"]
               .os-progress-bar.primary
                 .bar-labels
                   .bar-label-left
                     span Tenant C
                     /span.positive +12
                   .bar-label-right
-                    span.info 10% of $4,000
+                    span.info 100% of <b>$6M</b> budget total
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 10%"]
+                  .bar-level-0[style="width: 100%"]
+              .os-progress-bar.primary
+                .bar-labels
+                  .bar-label-left
+                    span Tenant D
+                    /span.positive +12
+                  .bar-label-right
+                    span.info 100% of <b>$6M</b>budget total
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-0[style="width: 100%"]
+              .os-progress-bar.primary
+                .bar-labels
+                  .bar-label-left
+                    span Tenant E
+                    /span.positive +12
+                  .bar-label-right
+                    span.info 100% of <b>$6M</b> budget total
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-0[style="width: 100%"]
 .row
   .col-sm-4.col-lg-3
     .element-wrapper
@@ -124,8 +142,8 @@
         .el-chart-w
           canvas#donutChart width="120" height="120"
           .inside-donut-chart-label
-            strong 587,720  
-            span TOTAL SQ FT
+            strong 500,000 
+            span Rentable Sq. Feet
         .el-legend
           .legend-value-w
             .legend-pin style="background-color: #6896f9;"
@@ -164,23 +182,23 @@
                 td.text-center 
                   .status-pill data-toggle="tooltip" data-title="Overdue"
                 td.nowrap B1
-                td.nowrap VACANT UNIT
-                td.nowrap 
+                td.nowrap 10,000
+                td.nowrap VACANT
                 td.nowrap 
                 td.nowrap 
                 td.text-left 
                 td.text-left 
                 td.row-actions
-                  a[class="btn btn-secondary btn-sm" href="forms_wizard.html"] Creae a lease
+                  a[class="btn btn-secondary btn-sm" href="forms_wizard.html"] Create a lease
 
               tr
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap B2
-                td.nowrap 2,000
+                td.nowrap 10,000
                 td.nowrap Tenant B
                 td.nowrap 5 years
-                td.nowrap 25%
+                td.nowrap 20%
                 td.text-left $23/sf/yr
                 td.text-left 1.81% (Annual)
                 td.row-actions 
@@ -192,10 +210,10 @@
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap 1
-                td.nowrap 2,500
+                td.nowrap 10,000
                 td.nowrap Tenant C
                 td.nowrap 10 years
-                td.nowrap 25%
+                td.nowrap 20%
                 td.text-left $18/sf/yr
                 td.text-left 1.05% (Annual)
                 td.row-actions 
@@ -207,10 +225,10 @@
                 td.text-center 
                   .status-pill.yellow data-toggle="tooltip" data-title="Pending"
                 td.nowrap 2
-                td.nowrap 1,800
+                td.nowrap 10,000
                 td.nowrap Tenant D
                 td.nowrap 4 years
-                td.nowrap 25%
+                td.nowrap 20%
                 td.text-left $28/sf/yr
                 td.text-left 1.15% (Annual)
                 td.row-actions 
@@ -222,10 +240,10 @@
                 td.text-center 
                   .status-pill.green data-toggle="tooltip" data-title="Complete"
                 td.nowrap 3
-                td.nowrap 3,000
+                td.nowrap 10,000
                 td.nowrap Tenant E
                 td.nowrap 20 years
-                td.nowrap 25%
+                td.nowrap 20%
                 td.text-left $30/sf/yr
                 td.text-left 1.60% (Annual)
                 td.row-actions 
@@ -236,31 +254,37 @@
 
   .col-sm-6.col-lg-8.col-xl-12.col-xxl-6
     .element-wrapper
-      h6.element-header Income Forecast
+      h6.element-header Property Overview
       .element-box
         .tickets-filter
 				  
-        / .os-tabs-w
-        /   .os-tabs-controls
-        /     ul.nav.nav-tabs.smaller
-        /       li.nav-item
-        /         a.nav-link.active data-toggle="tab" href="#tab_overview" Overview
-        /       li.nav-item
-        /         a.nav-link data-toggle="tab" href="#tab_sales" Expenses
-        /     ul.nav.nav-pills.smaller.d-none.d-xl-flex
-        /       li.nav-item
-        /         a.nav-link data-toggle="tab" href="#" Today
-        /       li.nav-item
-        /         a.nav-link.active data-toggle="tab" href="#" 7 Days
-        /       li.nav-item
-        /         a.nav-link data-toggle="tab" href="#" 14 Days
-        /       li.nav-item
-        /         a.nav-link data-toggle="tab" href="#" Last Month
-
+        .os-tabs-w
+          / .os-tabs-controls
+          /   ul.nav.nav-tabs.smaller
+          /     li.nav-item
+          /       a.nav-link.active data-toggle="tab" href="#tab_overview" Overview
+          /     li.nav-item
+          /       a.nav-link data-toggle="tab" href="#tab_sales" Expenses
+          /   ul.nav.nav-pills.smaller.d-none.d-xl-flex
+          /     li.nav-item
+          /       a.nav-link data-toggle="tab" href="#" Today
+          /     li.nav-item
+          /       a.nav-link.active data-toggle="tab" href="#" 7 Days
+          /     li.nav-item
+          /       a.nav-link data-toggle="tab" href="#" 14 Days
+          /     li.nav-item
+          /       a.nav-link data-toggle="tab" href="#" Last Month
+          .chart-sorting
+            .list-order
+              .label Date:
+              select
+                option June 2019
+                option May 2019
+                option April 2019
           .tab-content
             #tab_overview.tab-pane.active
               .el-tablo.bigger
-                .label Current Net Revenue
+                .label Tenant Expenses Breakdown
                 .value $12,537
               .el-chart-w
                 canvas#barChart1 width="600" height="450"
