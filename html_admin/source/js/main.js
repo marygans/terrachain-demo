@@ -644,7 +644,7 @@ $(function(){
         ],
         datasets: [
             {
-                data: [300, 50, 100, 30, 70],
+                data: [400000, 100000, 100, 30, 70],
                 backgroundColor: [ "#5797fc"],
                 hoverBackgroundColor: [ "#5797fc" ],
                 borderWidth: 0 
@@ -664,7 +664,7 @@ $(function(){
           animation:{
               animateScale:true
           },
-          cutoutPercentage: 80
+          cutoutPercentage: 90
         }
       });
 
