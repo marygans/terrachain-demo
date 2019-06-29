@@ -75,7 +75,9 @@
 .chart-sorting .list-order .label {
   display: inline;
 }
-
+.form-inline {
+  padding-bottom: 50px;
+}
 .btn {
   font-family: $font-family-alt;
   font-weight: $font-alt-weight-normal;
