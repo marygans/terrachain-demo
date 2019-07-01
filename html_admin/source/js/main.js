@@ -551,11 +551,11 @@ $(function(){
           datasets: [{
             label: 'Budgeted',
             backgroundColor: "#5797fc",
-            data: [24, 59, 30, 45, 58],
+            data: [0, 6,6 , 6, 6],
           }, {
             label: 'Actual',
             backgroundColor: "#ac0606",
-            data: [0, 0, 0, 45, 0],
+            data: [0, 0, 0, 8, 0],
           }],
         },
       options: {

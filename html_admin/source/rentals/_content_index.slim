@@ -7,8 +7,8 @@
         .row
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Total Cashflow
-              .value $1,045,400
+              .label Free Cashflows
+              .value $358M
               .trending.trending-up-basic
                 span 12%
                 i.os-icon.os-icon-arrow-up2
@@ -17,8 +17,8 @@
                 span  1 min ago
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Net Operating Income
-              .value $456,600
+              .label Operating Income (Millions)
+              .value $368M
               .trending.trending-down-basic
                 span 12%
                 i.os-icon.os-icon-arrow-down
@@ -27,8 +27,8 @@
                 span  1 day ago
           .col-sm-4.col-xxxl-3
             a.element-box.el-tablo href="#"
-              .label Net Operatng Expenses
-              .value $121,500
+              .label Operatng Expenses (Millions)
+              .value $130M
               .trending.trending-down-basic
                 span 9%
                 i.os-icon.os-icon-arrow-down
@@ -60,24 +60,28 @@
               .os-progress-bar.blue
                 .bar-labels
                   .bar-label-left
-                    span Property A
+                    span.spirit Spirit Tower 
                     /span.positive.header Utiliies
                     /span.positive.header Repair
                   .bar-label-right
-                    span.camex Property B
+                    span.info Union Offices
                   .bar-label-right
-                    span.info Property C
+                    span.camex Greenlake Offices
                   .bar-label-right
-                    span.misc Total budget: $10M
+                    span.misc Stark
+            
                 .bar-level-4[style="width: 100%"]
-                  .bar-level-5[style="width: 75%"]
-                    .bar-level-7[style="width: 65%"]
-                      .bar-level-6[style="width: 50%"]
+                  .bar-level-5[style="width: 90%"]
+                    .bar-level-7[style="width: 72%"]
+                      .bar-level-6[style="width: 67%"]
+                        .bar-level-8[style="width: 50%"]
               .os-progress-bar.blue
                 .bar-labels
                   .bar-label-left
-                    span.positive Current Expenses: $7.5M
+                    span.positive Current Expenses: $130M
                   .bar-label-left
+                    span.camex Total budget: $120M
+                    <br/>
                     span.negative Remaining $2.5M
           .col-md-6
             .padded.b-l.b-r-xl
@@ -93,45 +97,54 @@
               .os-progress-bar.blue
                 .bar-labels
                   .bar-label-left
-                    span Property A
+                    span Spirit Tower Office Building
                     /span.positive +10
                   .bar-label-right
-                    span.info 25%
+                    span.info 100%
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 25%"]
+                  .bar-level-0[style="width: 100%"]
               .os-progress-bar.primary
                 .bar-labels
                   .bar-label-left
-                    span Property B
+                    span Union Office Building
                     /span.negative .-5
                   .bar-label-right
-                    span.info 25%
+                    span.info 100%
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 25%"]
+                  .bar-level-0[style="width: 100%"]
               .os-progress-bar.primary
                 .bar-labels
                   .bar-label-left
-                    span Property C
+                    span Greenlake Office Building
                     /span.positive +12
                   .bar-label-right
-                    span.info 25%
+                    span.info 100%
                 .bar-level-1[style="width: 100%"]
-                  .bar-level-0[style="width: 25%"]
+                  .bar-level-0[style="width: 100%"]
+              .os-progress-bar.primary
+                .bar-labels
+                  .bar-label-left
+                    span Stark Offices
+                    /span.negative .-5
+                  .bar-label-right
+                    span.info 100%
+                .bar-level-1[style="width: 100%"]
+                  .bar-level-0[style="width: 100%"]
     .list-controls
-      .list-info 4 Properties managed in Seattle, WA by Greenlawn Associates
+      .list-info 4 Properties managed in Seattle, WA
       .list-order
         label for="" Order By:
         select
-          option Relevance
+          option Size
           option Date
           option Price
     
     .property-items[class="#{template_vars[0]['property_index_class']}"]
 
-      - properties = [['price' => '$130.50', 'img' => 'property2.jpg', 'title' => ' Spirit Tower Office Building'],
-                      ['price' => '$110.20', 'img' => 'property3.jpg', 'title' => 'Union Office Building'],
-                      ['price' => '$324', 'img' => 'property1.jpg', 'title' => 'Greenlake Office Building'],
-                      ['price' => '$100', 'img' => 'property4.jpg', 'title' => 'Stark Associates']]
+      - properties = [['price' => 'Avg: $25', 'img' => 'property2.jpg', 'title' => 'Spirit Tower Office Building','occupancy' => '80% Occupancy rate'],
+                      ['price' => 'Avg: $25', 'img' => 'property3.jpg', 'title' => 'Union Office Building','occupancy' => '100% Occupancy rate'],
+                      ['price' => 'Avg: $25', 'img' => 'property1.jpg', 'title' => 'Greenlake Office Building','occupancy' => '100% Occupancy rate'],
+                      ['price' => 'Avg: $25', 'img' => 'property4.jpg', 'title' => 'Stark Associates','occupancy' => ' 100% Occupancy rate']]
       - properties.each do |property|
         /!
           ------------------

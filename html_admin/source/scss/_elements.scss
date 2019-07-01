@@ -1491,6 +1491,7 @@ a.el-tablo {
   .bar-label-left {
     span {
       margin-right: 5px;
+      font-size: 0.52rem;
       &.positive {
         color: #619B2E;
       }
@@ -1501,15 +1502,22 @@ a.el-tablo {
   }
   .bar-label-right {
     span {
-      margin-left: 5px;
       &.info {
         color: #456CF9;
+        font-size: 0.52rem;
       }
       &.camex {
         color: #dcc312;
+        font-size: 0.52rem;
       }
       &.misc {
-        color: #dc12a7
+        color: #dc12a7;
+        font-size: 0.52rem;
+        margin-right: 78px;
+      }
+      &.spirit {
+        color: #1c12dc;
+        font-size: 0.52rem;
       }
     }
   }
@@ -1524,25 +1532,36 @@ a.el-tablo {
   .bar-level-4,
   .bar-level-5,
   .bar-level-6,
-  .bar-level-7 {
+  .bar-level-7,
+  .bar-level-8
+   {
     border-radius: 2px;
     height: 60px;
   }
   &.blue, &.primary {
     .bar-level-1,.bar-level-4 {
       background-color: #F2F2F2;
+      font-size: 0.52rem;
     }
     .bar-level-2,.bar-level-5 {
       background-color:#142390;
+      font-size: 0.52rem;
     }
     .bar-level-3,.bar-level-6 {
-      background-color:#147990
+      background-color:#147990;
+      font-size: 0.52rem;
     }
     .bar-level-7 {
       background-color:#dcc312;
+      font-size: 0.52rem;
     }
     .bar-level-0 {
       background-color:#19abf1;
+      font-size: 0.52rem;
+    }
+    .bar-level-8 {
+      background-color:#1c12dc;
+      font-size: 0.52rem;
     }
 
   }
