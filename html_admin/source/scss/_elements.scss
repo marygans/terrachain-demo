@@ -1492,6 +1492,10 @@ a.el-tablo {
     span {
       margin-right: 5px;
       font-size: 0.52rem;
+      &.info {
+        color: #456CF9;
+        font-size: 0.52rem;
+      }
       &.positive {
         color: #619B2E;
       }
@@ -1511,12 +1515,16 @@ a.el-tablo {
         font-size: 0.52rem;
       }
       &.misc {
-        color: #dc12a7;
+        color: #7d0e5f;
         font-size: 0.52rem;
         margin-right: 78px;
       }
       &.spirit {
-        color: #1c12dc;
+        color:#147990;
+        font-size: 0.52rem;
+      }
+      &.estimated {
+        color: #12dc9c;
         font-size: 0.52rem;
       }
     }
@@ -1544,7 +1552,7 @@ a.el-tablo {
       font-size: 0.52rem;
     }
     .bar-level-2,.bar-level-5 {
-      background-color:#142390;
+      background-color:#7d0e5f;
       font-size: 0.52rem;
     }
     .bar-level-3,.bar-level-6 {

@@ -555,7 +555,7 @@ $(function(){
           }, {
             label: 'Actual',
             backgroundColor: "#ac0606",
-            data: [0, 0, 0, 8, 0],
+            data: [0, 0, 0, 2, 0],
           }],
         },
       options: {
