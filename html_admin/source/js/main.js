@@ -547,15 +547,24 @@ $(function(){
       new Chart(barChart1, {
         type: 'bar',
         data: {
-          labels: ["Tenant A","Tenant B","Tenant C","Tenant D","Tenant E"],
+          labels: ["Actual;January", "Estimated;January", "Actual;February", "Estimated;February", "Actual;March", "Estimated;March"],
           datasets: [{
-            label: 'Budgeted',
+            label: 'Utilities',
             backgroundColor: "#5797fc",
-            data: [0, 6,6 , 6, 6],
+            data: [5, 6,6,6,6,6],
+          },{
+            label: 'Utilities',
+            backgroundColor: "#7EC44D",
+            data: [5, 6,6 , 6, 6,6],
           }, {
-            label: 'Actual',
-            backgroundColor: "#ac0606",
-            data: [0, 0, 0, 2, 0],
+            label: 'Janitor',
+            backgroundColor: "#5ABE78",
+            data: [5, 6,6 , 6,6,6],
+          },
+          {
+            label: 'Repairs',
+            backgroundColor: "#27B5A9",
+            data: [5, 6,6 , 6,6,6],
           }],
         },
       options: {
@@ -563,15 +572,47 @@ $(function(){
             displayColors: true,
             callbacks:{
               mode: 'x',
+              
             },
           },
           scales: {
             xAxes: [{
+              id:'xAxis1',
+              type:"category",
               stacked: true,
               gridLines: {
                 display: false,
+              },
+              ticks:{
+                callback:function(label){
+                  var time = label.split(";")[0];
+                  var month = label.split(";")[1];
+                  return time;
+                }
               }
-            }],
+            ,
+          },
+          {
+            id:'xAxis2',
+            type:"category",
+            gridLines: {
+              drawOnChartArea: false,
+            },
+            ticks:{
+              callback:function(label){
+                var time = label.split(";")[0];
+                var month = label.split(";")[1];
+                if(time === "Actual"){
+                  return month;
+                }else{
+                  return "";
+                }
+              },
+              fontSize: 18,
+              padding: 25
+            }
+          }
+        ],
             yAxes: [{
               stacked: true,
               ticks: {
