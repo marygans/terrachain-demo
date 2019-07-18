@@ -1490,7 +1490,7 @@ a.el-tablo {
   }
   .bar-label-left {
     span {
-      margin-right: 5px;
+      margin-right: 0px;
       font-size: 0.52rem;
       &.info {
         color: #456CF9;
@@ -1501,6 +1501,23 @@ a.el-tablo {
       }
       &.negative {
         color: #D83536;
+      }
+      &.camex {
+        color: #dcc312;
+        font-size: 0.52rem;
+      }
+      &.misc {
+        color: #7d0e5f;
+        font-size: 0.52rem;
+        margin-right: 0px;
+      }
+      &.spirit {
+        color:#147990;
+        font-size: 0.52rem;
+      }
+      &.estimated {
+        color: #016344;
+        font-size: 0.52rem;
       }
     }
   }
@@ -1517,23 +1534,33 @@ a.el-tablo {
       &.misc {
         color: #7d0e5f;
         font-size: 0.52rem;
-        margin-right: 78px;
+        margin-right: 0px;
       }
       &.spirit {
         color:#147990;
         font-size: 0.52rem;
       }
-      &.estimated {
-        color: #12dc9c;
+      &.repairs {
+        color: #d88937;
         font-size: 0.52rem;
       }
+      &.estimated {
+        color: #016344;
+        font-size: 0.52rem;
+      }
+      &.standard {
+        color: #6a2bd0;
+        font-size: 0.52rem;
+      }
+      
     }
   }
 
   .bar-level-0,
   .bar-level-1,
   .bar-level-2,
-  .bar-level-3 {
+  .bar-level-3,
+  .bar-level-9 {
     border-radius: 12px;
     height: 6px;
   }
@@ -1541,14 +1568,16 @@ a.el-tablo {
   .bar-level-5,
   .bar-level-6,
   .bar-level-7,
-  .bar-level-8
+  .bar-level-8,
+  .bar-level-10,
+  .bar-level-11
    {
     border-radius: 2px;
     height: 60px;
   }
   &.blue, &.primary {
     .bar-level-1,.bar-level-4 {
-      background-color: red;
+      background-color: #F2F2F2;
       font-size: 0.52rem;
     }
     .bar-level-2,.bar-level-5 {
@@ -1569,6 +1598,18 @@ a.el-tablo {
     }
     .bar-level-8 {
       background-color:#1c12dc;
+      font-size: 0.52rem;
+    }
+    .bar-level-9 {
+      background-color:red;
+      font-size: 0.52rem;
+    }
+    .bar-level-10 {
+      background-color:#d88937;
+      font-size: 0.52rem;
+    }
+    .bar-level-11 {
+      background-color:#6a2bd0;
       font-size: 0.52rem;
     }
 
