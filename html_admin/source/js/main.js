@@ -547,7 +547,7 @@ $(function(){
       new Chart(barChart1, {
         type: 'bar',
         data: {
-          labels: ["Actual;January", "Estimated;January", "Actual;February", "Estimated;February", "Actual;March", "Estimated;March"],
+          labels: ["Actual;January", "Estimated;January","Actual;February", "Estimated;February", "Actual;March", "Estimated;March"],
           datasets: [{
             label: 'Utilities',
             backgroundColor: "#5797fc",
@@ -588,13 +588,16 @@ $(function(){
                   var time = label.split(";")[0];
                   var month = label.split(";")[1];
                   return time;
-                }
+                },
+                xPadding:30,
+          
               }
             ,
           },
           {
             id:'xAxis2',
             type:"category",
+            offset: true,
             gridLines: {
               drawOnChartArea: false,
             },
@@ -609,7 +612,7 @@ $(function(){
                 }
               },
               fontSize: 18,
-              padding: 25
+              padding: 0
             }
           }
         ],
