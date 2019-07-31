@@ -549,22 +549,31 @@ $(function(){
         data: {
           labels: ["Actual;January", "Estimated;January","Actual;February", "Estimated;February", "Actual;March", "Estimated;March"],
           datasets: [{
-            label: 'Utilities',
+            label: 'Standard Services',
             backgroundColor: "#5797fc",
-            data: [5, 6,6,6,6,6],
+            data: [178, 296,118,89,178,107],
           },{
-            label: 'Utilities',
+            label: 'Repairs',
             backgroundColor: "#7EC44D",
-            data: [5, 6,6 , 6, 6,6],
+            data: [178,340,136,89,178,80],
           }, {
-            label: 'Janitor',
+            label: 'Insurance',
             backgroundColor: "#5ABE78",
-            data: [5, 6,6 , 6,6,6],
+            data: [89, 148,59,44,89,53],
           },
           {
-            label: 'Repairs',
+            label: 'Wages',
             backgroundColor: "#27B5A9",
-            data: [5, 6,6 , 6,6,6],
+            data: [133, 222,71, 53,107,64],
+          },{
+            label: 'Utilities',
+            backgroundColor: "#2799b5",
+            data: [222, 326,148, 98,178,107],
+          },
+          {
+            label: 'Property Management costs',
+            backgroundColor: "#2730b5",
+            data: [89, 148,59,44,89,53],
           }],
         },
       options: {
@@ -620,6 +629,7 @@ $(function(){
               stacked: true,
               ticks: {
                 beginAtZero: true,
+               
               },
               type: 'linear',
             }]
