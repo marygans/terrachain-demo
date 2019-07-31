@@ -551,29 +551,29 @@ $(function(){
           datasets: [{
             label: 'Standard Services',
             backgroundColor: "#5797fc",
-            data: [178, 296,118,89,178,107],
+            data: [5, 6,6,6,6,6],
           },{
             label: 'Repairs',
             backgroundColor: "#7EC44D",
-            data: [178,340,136,89,178,80],
+            data: [5, 6,6 , 6, 6,6],
           }, {
             label: 'Insurance',
             backgroundColor: "#5ABE78",
-            data: [89, 148,59,44,89,53],
+            data: [5, 6,6 , 6, 6,6],
           },
           {
             label: 'Wages',
             backgroundColor: "#27B5A9",
-            data: [133, 222,71, 53,107,64],
+            data: [5, 6,6 , 6, 6,6],
           },{
             label: 'Utilities',
             backgroundColor: "#2799b5",
-            data: [222, 326,148, 98,178,107],
+            data: [5, 6,6 , 6, 6,6],
           },
           {
             label: 'Property Management costs',
             backgroundColor: "#2730b5",
-            data: [89, 148,59,44,89,53],
+            data: [5, 6,6 , 6, 6,6],
           }],
         },
       options: {
