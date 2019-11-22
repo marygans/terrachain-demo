@@ -3,6 +3,19 @@
   .rentals-list
     .element-wrapper.portfolio-header
       h6.element-header Company | Seattle Portfolio
+      .element-wrapper
+        .chart-sorting
+            .list-order
+              .label From:
+              select
+                option April 2019
+                option May 2019
+                option June 2019
+              .label To:
+              select
+                option June 2019
+                option July 2019
+                option August 2019
       .element-content
         .row
           .col-sm-4.col-xxxl-3
@@ -141,9 +154,9 @@
     
     .property-items[class="#{template_vars[0]['property_index_class']}"]
 
-      - properties = [['price' => 'Avg: $78', 'img' => 'property3.jpg', 'title' => 'Spirit Tower Office Building','occupancy' => '80% Occupancy rate'],
+      - properties = [['price' => 'Avg: $78', 'img' => 'property5.jpg', 'title' => 'Spirit Tower Office Building','occupancy' => '80% Occupancy rate'],
                       ['price' => 'Avg: $78', 'img' => 'property2.jpg', 'title' => 'Union Office Building','occupancy' => '100% Occupancy rate'],
-                      ['price' => 'Avg: $78', 'img' => 'property1.jpg', 'title' => 'Greenlake Office Building','occupancy' => '100% Occupancy rate'],
+                      ['price' => 'Avg: $78', 'img' => 'property6.jpg', 'title' => 'Greenlake Office Building','occupancy' => '100% Occupancy rate'],
                       ['price' => 'Avg: $78', 'img' => 'property4.jpg', 'title' => 'Stark Associates','occupancy' => ' 100% Occupancy rate']]
       - properties.each do |property|
         /!
