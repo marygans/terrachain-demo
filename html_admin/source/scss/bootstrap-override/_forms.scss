@@ -179,6 +179,27 @@ legend {
     padding-right: 220px;
   }
 }
+
+.test-aligned{
+  float: right;
+  font-weight: 600;
+  color: #684390;
+  padding-right: 100px;
+  width: 150px;
+  &.actual {
+    color: green;
+  }
+  &.exceed {
+    color: red;
+  }
+  &.estimated {
+    padding-right: 220px;
+  }
+  span {
+    float: right;
+  }
+}
+
 .test-header{
   float: right;
   font-weight: 600;
