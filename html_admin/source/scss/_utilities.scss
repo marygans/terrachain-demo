@@ -80,6 +80,15 @@
 .example-content .progress + .progress {
   margin-top: 1rem;
 }
+.terra-column {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  & + .example-column {
+    border-left: none;
+  }
+  border: none;
+}
 
 
 .with-avatar {

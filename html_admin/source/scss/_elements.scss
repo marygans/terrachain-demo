@@ -1,4 +1,4 @@
-/* 
+/*
 
   # -- STYLES NAVIGATION:
 
@@ -65,7 +65,7 @@
       font-size: 30px;
     }
     .element-info-text {
-    
+
     }
     &.smaller {
       .element-info-icon {
@@ -76,7 +76,7 @@
         .element-inner-header {
           margin-bottom: 0px;
         }
-      } 
+      }
     }
   }
   .element-actions {
@@ -141,7 +141,7 @@
     font-size: $font-size-base * 0.9;
     display: block;
   }
-  
+
   .element-search {
     position: relative;
     display: inline;
@@ -161,7 +161,7 @@
         align-items: baseline;
       }
     }
-    
+
     .element-search-aligned {
       display: inline;
       justify-items: baseline;
@@ -229,6 +229,11 @@
 
 .element-box-content + .form-header {
   margin-top: 2rem;
+}
+
+.element-box-content-w-border {
+  margin-top: 2rem;
+  border-bottom: 3px solid rgba(0,0,0,0.25);
 }
 
 .element-box + .element-box {
@@ -401,7 +406,7 @@ a.el-tablo {
       transform: scale(1.1) translateY(-3px);
     }
     .label {
-      
+
     }
     .label {
       transform: translateY(-2px);
@@ -835,7 +840,7 @@ a.el-tablo {
           }
           span {
             display: inline-block;
-            vertical-align: middle; 
+            vertical-align: middle;
             font-size: $font-size-base * 0.8;
           }
         }
@@ -1187,7 +1192,7 @@ a.el-tablo {
     }
   }
   .invoice-table {
-    
+
   }
 }
 
@@ -1253,7 +1258,7 @@ a.el-tablo {
     padding-top: 0px;
     padding-bottom: 10px;
   }
-  
+
   .logo-w {
     text-align: center;
     padding: 20%;
@@ -1442,7 +1447,7 @@ a.el-tablo {
       padding-left: 20px;
     }
     .ta-record {
-      display: block;  
+      display: block;
     }
     .ta-timestamp {
       font-size: $font-size-base * 0.9;
@@ -1552,7 +1557,7 @@ a.el-tablo {
         color: #6a2bd0;
         font-size: 0.52rem;
       }
-      
+
     }
   }
 
@@ -1767,7 +1772,7 @@ a.el-tablo {
 
 
 
-/* 
+/*
 #16. Call to action box
 */
 
@@ -1912,7 +1917,7 @@ a.el-tablo {
 
 
 
-/* 
+/*
 #18. Todo List Widget
 */
 
@@ -1926,7 +1931,7 @@ a.el-tablo {
     border-radius: 4px;
     margin-bottom: 0.5rem;
     .ti-info {
-      
+
     }
     .ti-header {
       font-weight: $font-weight-bold;
@@ -1958,7 +1963,7 @@ a.el-tablo {
 
 
 
-/* 
+/*
 #19. Fancy Progress With Label
 */
 .fancy-progress-with-label {

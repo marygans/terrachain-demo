@@ -2,12 +2,12 @@ const fs = require('fs');
 const AWS = require('aws-sdk');
 const path = require('path');
 const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET
+  accessKeyId: 'AKIA23YXQAWESSCOWZEC',
+  secretAccessKey: '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'
 });
 
 
-const BUCKET_NAME = 'terra-demo-apollo';
+const BUCKET_NAME = 'terra-demo-artemis';
 const PATH_TO_UPLOAD = './dist';
 
 
