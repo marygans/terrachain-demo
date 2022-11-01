@@ -21,7 +21,7 @@
   "homepage": "https://bitbucket.org/osetin/light-admin#readme",
   "devDependencies": {
     "aws-sdk": "^2.480.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^3.2.1",
